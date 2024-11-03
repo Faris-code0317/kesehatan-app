@@ -150,8 +150,7 @@
                     <div class="col-md-11 grid-margin stretch-card">
                         <div class="card position-relative">
                             <div class="card-body">
-                                <p class="card-title">Data Siswa SMA/K</p>
-                                <div class="d-flex justify-content-center">
+                                <p class="card-title">Data Siswa SMP</p>
                                     <table class="table table-striped table-hover table-bordered table-responsive" style="border-radius: 5px;">
                                         <thead class="text-center">
                                             <tr>
@@ -168,9 +167,9 @@
                                         <tbody>
                                             <tr>
                                                 <td>1</td>
-                                                <td>Abdul Muhith</td>
-                                                <td>XI A PPLG</td>
-                                                <td>Ust Nurhadi</td>
+                                                <td>Abdul Latif</td>
+                                                <td>VIII B</td>
+                                                <td>Ust Tatang</td>
                                                 <td>Demam</td>
                                                 <td>sudah Berobat</td>
                                                 <td>10/11/2024</td>
@@ -181,24 +180,8 @@
                                                     </form>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>Abdul Rian</td>
-                                                <td>XI A PPLG</td>
-                                                <td>Ust Nurhadi</td>
-                                                <td>Flu</td>
-                                                <td>Belum Berobat</td>
-                                                <td>8/11/2024</td>
-                                                <td class="d-flex">
-                                                    <a href="#" class="btn btn-warning mr-4">Edit</a>
-                                                    <form action="" method="post">
-                                                        <button type="submit" class="btn btn-danger">Delete</button>
-                                                    </form>
-                                                </td>
-                                            </tr>
                                         </tbody>
                                     </table>
-                                </div>
                             </div>
                         </div>
                     </div>

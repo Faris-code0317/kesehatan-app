@@ -6,7 +6,7 @@
         <div class="col-md-12 grid-margin">
           <div class="d-flex justify-content-between align-items-center">
             <div>
-              <h4 class="font-weight-bold mb-0">Data Siswa Sakit</h4>
+              <h4 class="font-weight-bold mb-0">Data Siswi Sakit</h4>
             </div>
           </div>
         </div>
@@ -15,7 +15,7 @@
         <div class="col-md-3 grid-margin stretch-card">
           <div class="card">
             <div class="card-body">
-              <p class="card-title text-md-center text-xl-left">Jumlah Siswa Sakit</p>
+              <p class="card-title text-md-center text-xl-left">Jumlah Siswi Sakit</p>
               <div class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
                 <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">12</h3>
                 <svg width="100" height="150" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -150,8 +150,7 @@
                     <div class="col-md-11 grid-margin stretch-card">
                         <div class="card position-relative">
                             <div class="card-body">
-                                <p class="card-title">Data Siswa SMA/K</p>
-                                <div class="d-flex justify-content-center">
+                                <p class="card-title">Data Siswi SMA/K</p>
                                     <table class="table table-striped table-hover table-bordered table-responsive" style="border-radius: 5px;">
                                         <thead class="text-center">
                                             <tr>
@@ -168,9 +167,9 @@
                                         <tbody>
                                             <tr>
                                                 <td>1</td>
-                                                <td>Abdul Muhith</td>
-                                                <td>XI A PPLG</td>
-                                                <td>Ust Nurhadi</td>
+                                                <td>Cantika</td>
+                                                <td>VII A</td>
+                                                <td>Ustzh</td>
                                                 <td>Demam</td>
                                                 <td>sudah Berobat</td>
                                                 <td>10/11/2024</td>
@@ -181,24 +180,8 @@
                                                     </form>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>Abdul Rian</td>
-                                                <td>XI A PPLG</td>
-                                                <td>Ust Nurhadi</td>
-                                                <td>Flu</td>
-                                                <td>Belum Berobat</td>
-                                                <td>8/11/2024</td>
-                                                <td class="d-flex">
-                                                    <a href="#" class="btn btn-warning mr-4">Edit</a>
-                                                    <form action="" method="post">
-                                                        <button type="submit" class="btn btn-danger">Delete</button>
-                                                    </form>
-                                                </td>
-                                            </tr>
                                         </tbody>
                                     </table>
-                                </div>
                             </div>
                         </div>
                     </div>

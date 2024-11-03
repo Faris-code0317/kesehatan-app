@@ -9,6 +9,7 @@
   <!-- plugins:css -->
   <link rel="stylesheet" href="{{ asset('template-admin/vendors/ti-icons/css/themify-icons.css') }}">
   <link rel="stylesheet" href="{{ asset('template-admin/vendors/base/vendor.bundle.base.css')}}">
+  <link rel="stylesheet" href="{{ asset('fontawesome/css/all.min.css') }}">
   <!-- endinject -->
   <!-- plugin css for this page -->
   <!-- End plugin css for this page -->
@@ -47,6 +48,7 @@
   <!-- endinject -->
   <!-- Custom js for this page-->
   <script src="{{ asset('template-admin/js/dashboard.js')}}"></script>
+
   <!-- End custom js for this page-->
 </body>
 

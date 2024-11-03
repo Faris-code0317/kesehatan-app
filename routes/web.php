@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\DataController;
 use App\Http\Controllers\SesiController;
 use Illuminate\Support\Facades\Route;
 
@@ -30,7 +31,11 @@ Route::get('/home',function(){
 Route::middleware(['auth'])->group(function(){
     Route::get('/admin',[AdminController::class,'index']);
     Route::get('/admin/operator',[AdminController::class,'operator'])->middleware(('userAkses:operator'));
-    Route::get('/admin/kordinator',[AdminController::class,'kordinator'])->middleware(('userAkses:kordinator'));
+    Route::get('/admin/kordinator',[AdminController::class,'kordinator'])->middleware(('userAkses:kordinator'))->name('data.pasien');
+    Route::get('/admin/kordinator/siswasmp',[DataController::class,'datasiswasmp'])->name('datasiswa.smp');
+    Route::get('/admin/kordinator/siswismak',[DataController::class,'datasiswismak'])->name('datasiswi.smak');
+    Route::get('/admin/kordinator/siswismp',[DataController::class,'datasiswismp'])->name('datasiswi.smp');
     Route::get('/logout',[SesiController::class,'logout']);
 
 });
+

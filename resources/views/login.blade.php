@@ -107,12 +107,12 @@ height: 100%;
             </div>
           </div>
         </div>
-        <div
-          class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+        <div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary" style="margin-top: 200px">
           <!-- Copyright -->
           <div class="text-white mb-3 mb-md-0">
             Copyright © 2024. AL-ITTIHAD.
           </div>
+        </div>
           <!-- Copyright -->
 
           <!-- Right -->
