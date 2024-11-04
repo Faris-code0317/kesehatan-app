@@ -6,15 +6,28 @@ use Illuminate\Http\Request;
 
 class DataController extends Controller
 {
-    public function datasiswasmp(){
-        return view('admin.dtsiswasmp');
+
+    public function datasiswa(){
+        return view('admin.index');
+    }
+    public function datasiswi(){
+        return view('admin.dtsiswi');
     }
 
-    public function datasiswismak(){
-        return view('admin.dtsiswismak');
+    public function rekamsiswa(){
+        return view('admin.rekammedis.frmrekamsiswa');
     }
 
-    public function datasiswismp(){
-        return view('admin.dtsiswismp');
+    public function rekamsiswi(){
+        return view('admin.rekammedis.frmrekamsiswi');
     }
+
+    public function tambahpasien(){
+        return view('admin.tambah.tambahpasien');
+    }
+
+    public function dashboard(){
+        return view('admin.dashboard');
+    }
+
 }

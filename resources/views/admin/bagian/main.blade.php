@@ -32,6 +32,13 @@
     </div>
     <!-- page-body-wrapper ends -->
   </div>
+<footer class="footer bg-primary">
+    <div class="d-sm-flex justify-content-between align-items-center text-white">
+        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">SMKS AL-ITTIHAD</span>
+        <span class="ms-auto">BERBASIS INDUSTRI 4.0</span>
+    </div>
+</footer>
+
   <!-- container-scroller -->
 
   <!-- plugins:js -->

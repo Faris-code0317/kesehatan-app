@@ -15,7 +15,7 @@
         <div class="col-md-3 grid-margin stretch-card">
           <div class="card">
             <div class="card-body">
-              <p class="card-title text-md-center text-xl-left">Jumlah Siswa Sakit</p>
+              <p class="card-title text-md-center text-xl-left">Jumlah Pasien Siswa</p>
               <div class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
                 <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">12</h3>
                 <svg width="100" height="150" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -147,12 +147,12 @@
             </div>
             <!-- Tab untuk Siswa SMA/K -->
                 <div class="row">
-                    <div class="col-md-11 grid-margin stretch-card">
-                        <div class="card position-relative">
+                    <div class="col-md-12 grid-margin stretch-card">
+                        <div class="card">
                             <div class="card-body">
-                                <p class="card-title">Data Siswa SMA/K</p>
-                                <div class="d-flex justify-content-center">
-                                    <table class="table table-striped table-hover table-bordered table-responsive" style="border-radius: 5px;">
+                                <p class="card-title mb-0">Data Pasien Siswa</p>
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
                                         <thead class="text-center">
                                             <tr>
                                                 <th>No</th>
@@ -160,7 +160,7 @@
                                                 <th>Kelas</th>
                                                 <th>Wali Kelas</th>
                                                 <th>Keluhan/Gejala</th>
-                                                <th>Keterangan</th>
+                                                <th>Status Pengobatan</th>
                                                 <th>Tanggal Sakit</th>
                                                 <th>Option</th>
                                             </tr>
@@ -172,28 +172,10 @@
                                                 <td>XI A PPLG</td>
                                                 <td>Ust Nurhadi</td>
                                                 <td>Demam</td>
-                                                <td>sudah Berobat</td>
+                                                <td>Belum Berobat</td>
                                                 <td>10/11/2024</td>
                                                 <td class="d-flex">
-                                                    <a href="#" class="btn btn-warning mr-4">Edit</a>
-                                                    <form action="" method="post">
-                                                        <button type="submit" class="btn btn-danger">Delete</button>
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>Abdul Rian</td>
-                                                <td>XI A PPLG</td>
-                                                <td>Ust Nurhadi</td>
-                                                <td>Flu</td>
-                                                <td>Belum Berobat</td>
-                                                <td>8/11/2024</td>
-                                                <td class="d-flex">
-                                                    <a href="#" class="btn btn-warning mr-4">Edit</a>
-                                                    <form action="" method="post">
-                                                        <button type="submit" class="btn btn-danger">Delete</button>
-                                                    </form>
+                                                    <a href="{{ route('rekam.siswa') }}" class="btn btn-primary mr-4">Pilih</a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -205,12 +187,5 @@
                 </div>
             </div>
     <!-- content-wrapper ends -->
-    <!-- partial:partials/_footer.html -->
-    <footer class="footer">
-      <div class="d-sm-flex justify-content-center justify-content-sm-between">
-        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="ti-heart text-danger ml-1"></i></span>
-      </div>
-    </footer>
-    <!-- partial -->
   </div>
 @endsection

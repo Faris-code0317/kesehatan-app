@@ -1,21 +1,25 @@
 <nav class="sidebar sidebar-offcanvas bg-white" id="sidebar">
     <ul class="nav">
       <li class="nav-item">
-        <a class="nav-link" data-toggle="collapse" href="#datamedis" aria-expanded="false" aria-controls="ui-basic">
+        <a class="nav-link" href="{{ route('dashboard.kesehatan') }}">
+          <i class="fa fa-dashboard"></i>
+          <span class="menu-title">Dashborad</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#datamedis" aria-expanded="false" aria-controls="datamedis">
             <i class="ti-shield menu-icon"></i>
             <span class="menu-title">Data Pasien</span>
           <i class="menu-arrow"></i>
         </a>
         <div class="collapse" id="datamedis">
           <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="{{ route('data.pasien') }}">Siswa SMA/K</a></li>
-            <li class="nav-item"> <a class="nav-link" href="{{ route('datasiswa.smp') }}">Siswa SMP</a></li>
-            <li class="nav-item"> <a class="nav-link" href="{{ route('datasiswi.smak') }}">Siswi SMA/K</a></li>
-            <li class="nav-item"> <a class="nav-link" href="{{ route('datasiswi.smp') }}">Siswi SMP</a></li>
+            <li class="nav-item"> <a class="nav-link" href="{{ route('data.pasien') }}">Data Siswa</a></li>
+            <li class="nav-item"> <a class="nav-link" href="{{ route('data.siswi') }}">Data Siswi</a></li>
           </ul>
         </div>
       </li>
-      <li class="nav-item">
+      {{-- <li class="nav-item">
         <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
           <i class="ti-palette menu-icon"></i>
           <span class="menu-title">Tambah Data Pasien</span>
@@ -23,10 +27,16 @@
         </a>
         <div class="collapse" id="ui-basic">
           <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="">Entar Di Isi</a></li>
-            <li class="nav-item"> <a class="nav-link" href="">Entar Di Isi</a></li>
+            <li class="nav-item"> <a class="nav-link" href="{{ route('tambah.siswa') }}">Pasien Siswa</a></li>
+            <li class="nav-item"> <a class="nav-link" href="{{ route('tambah.siswi') }}">Pasien Siswi</a></li>
           </ul>
         </div>
+      </li> --}}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route('tambah.pasien') }}">
+          <i class="ti-view-list-alt menu-icon"></i>
+          <span class="menu-title">Tambah Pasien</span>
+        </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="pages/forms/basic_elements.html">
@@ -38,18 +48,6 @@
         <a class="nav-link" href="pages/charts/chartjs.html">
           <i class="ti-pie-chart menu-icon"></i>
           <span class="menu-title">Laporan</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="pages/tables/basic-table.html">
-          <i class="ti-view-list-alt menu-icon"></i>
-          <span class="menu-title">Tables</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="pages/icons/themify.html">
-          <i class="ti-star menu-icon"></i>
-          <span class="menu-title">Icons</span>
         </a>
       </li>
       <li class="nav-item">

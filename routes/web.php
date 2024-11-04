@@ -31,11 +31,18 @@ Route::get('/home',function(){
 Route::middleware(['auth'])->group(function(){
     Route::get('/admin',[AdminController::class,'index']);
     Route::get('/admin/operator',[AdminController::class,'operator'])->middleware(('userAkses:operator'));
-    Route::get('/admin/kordinator',[AdminController::class,'kordinator'])->middleware(('userAkses:kordinator'))->name('data.pasien');
-    Route::get('/admin/kordinator/siswasmp',[DataController::class,'datasiswasmp'])->name('datasiswa.smp');
-    Route::get('/admin/kordinator/siswismak',[DataController::class,'datasiswismak'])->name('datasiswi.smak');
-    Route::get('/admin/kordinator/siswismp',[DataController::class,'datasiswismp'])->name('datasiswi.smp');
+    Route::get('/admin/kordinator',[AdminController::class,'kordinator'])->middleware(('userAkses:kordinator'));
     Route::get('/logout',[SesiController::class,'logout']);
-
 });
+Route::get('/admin/kordinator/siswa',[DataController::class,'datasiswa'])->name('data.pasien');
+Route::get('/admin/kordinator/siswi',[DataController::class,'datasiswi'])->name('data.siswi');
+Route::get('/admin/kordinator/dashboard',[DataController::class,'dashboard'])->name('dashboard.kesehatan');
+//nanti tambahkan id
+Route::get('/admin/kordinator/rekamsiswa',[DataController::class,'rekamsiswa'])->name('rekam.siswa');
+Route::get('/admin/kordinator/rekamsiswi',[DataController::class,'rekamsiswi'])->name('rekam.siswi');
+//tambahkan route::putnya di bawah sini
 
+
+
+//route menuju form tambah
+Route::get('/admin/kordinator/tambahpasien',[DataController::class,'tambahpasien'])->name('tambah.pasien');
