@@ -60,4 +60,7 @@ Route::get('/', function () {
     return view('landing');
 });
 
+Route::get('/landing', [PageController::class, 'landing'])->name('landing');
 Route::get('/about', [PageController::class, 'about'])->name('about');
+Route::get('/login', [PageController::class, 'login'])->name('login');
+Route::get('/siswa', [PageController::class, 'siswa'])->name('siswa');

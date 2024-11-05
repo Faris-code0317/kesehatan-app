@@ -28,10 +28,10 @@
     <link href="{{ asset('poskess/lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{ asset('poskess/css/bootstrap.min.css?v-2+') }}" rel="stylesheet">
+    <link href="{{ asset('poskess/css/bootstrap.min.css?v3+') }}" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="{{ asset('poskess/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('poskess/css/style.css?v3+') }}" rel="stylesheet">
 
 </head>
 
@@ -90,7 +90,7 @@
             <div class="navbar-nav ms-auto p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="" class="nav-item nav-link">Rekam Medis</a>
-                <a href="service.html" class="nav-item nav-link">Siswa</a>
+                <a href="{{ route('siswa')}}" class="nav-item nav-link">Siswa</a>
                 <a href="{{ route('about')}}" class="nav-item nav-link">Tentang</a>
                 {{-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -104,7 +104,7 @@
                 </div> --}}
                 {{-- <a href="contact.html" class="nav-item nav-link">Contact</a> --}}
             </div>
-            <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Check<i
+            <a href="{{ route('login')}}" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Login<i
                     class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
@@ -235,7 +235,7 @@
                 <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
                         <img class="position-absolute img-fluid w-100 h-100"
-                            src="{{ asset('poskess/img/about.jpg') }}" style="object-fit: cover;" alt="">
+                            src="{{ asset('img/teamwork.jpg') }}" style="object-fit: cover;" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
@@ -548,131 +548,7 @@
     <!-- Projects End -->
 
 
-    <!-- Quote Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-        <div class="container quote px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100"
-                            src="{{ asset('poskess/img/quote.jpg') }}" style="object-fit: cover;" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 pe-lg-0">
-                        <h6 class="text-primary">Free Quote</h6>
-                        <h1 class="mb-4">Get A Free Quote</h1>
-                        <p class="mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam
-                            amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat
-                            amet</p>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name"
-                                        style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email"
-                                        style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Mobile"
-                                        style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Select A Service</option>
-                                        <option value="1">Service 1</option>
-                                        <option value="2">Service 2</option>
-                                        <option value="3">Service 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control border-0" placeholder="Special Note"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary rounded-pill py-3 px-5"
-                                        type="submit">Submit</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Quote End -->
 
-
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h6 class="text-primary">Team Member</h6>
-                <h1 class="mb-4">Experienced Team Members</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item rounded overflow-hidden">
-                        <div class="d-flex">
-                            <img class="img-fluid w-75" src="{{ asset('poskess/img/team-1.jpg') }}" alt="">
-                            <div class="team-social w-25">
-                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <h5>Full Name</h5>
-                            <span>Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item rounded overflow-hidden">
-                        <div class="d-flex">
-                            <img class="img-fluid w-75" src="{{ asset('poskess/img/team-2.jpg') }}" alt="">
-                            <div class="team-social w-25">
-                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <h5>Full Name</h5>
-                            <span>Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item rounded overflow-hidden">
-                        <div class="d-flex">
-                            <img class="img-fluid w-75" src="{{ asset('poskess/img/team-3.jpg') }}" alt="">
-                            <div class="team-social w-25">
-                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <h5>Full Name</h5>
-                            <span>Designation</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
