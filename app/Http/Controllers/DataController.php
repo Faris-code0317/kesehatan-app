@@ -30,4 +30,8 @@ class DataController extends Controller
         return view('admin.dashboard');
     }
 
+    public function datarekammedis(){
+        return view('admin.rekammedis.data');
+    }
+
 }

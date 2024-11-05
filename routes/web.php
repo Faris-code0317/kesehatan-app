@@ -33,6 +33,16 @@ Route::get('/home', function () {
 });
 
 
+<<<<<<< HEAD
+Route::middleware(['auth'])->group(function(){
+    Route::get('/admin',[AdminController::class,'index']);
+    Route::get('/admin/operator',[AdminController::class,'operator'])->middleware(('userAkses:operator'));
+Route::get('/admin/kordinator/dashboard',[DataController::class,'dashboard'])->middleware(('userAkses:kordinator'))->name('dashboard.kesehatan');
+    Route::get('/logout',[SesiController::class,'logout']);
+});
+Route::get('/admin/kordinator/siswa',[DataController::class,'datasiswa'])->name('data.pasien');
+Route::get('/admin/kordinator/siswi',[DataController::class,'datasiswi'])->name('data.siswi');
+=======
 Route::middleware(['auth'])->group(function () {
     Route::get('/admin', [AdminController::class, 'index']);
     Route::get('/admin/operator', [AdminController::class, 'operator'])->middleware(('userAkses:operator'));
@@ -42,6 +52,7 @@ Route::middleware(['auth'])->group(function () {
 Route::get('/admin/kordinator/siswa', [DataController::class, 'datasiswa'])->name('data.pasien');
 Route::get('/admin/kordinator/siswi', [DataController::class, 'datasiswi'])->name('data.siswi');
 Route::get('/admin/kordinator/dashboard', [DataController::class, 'dashboard'])->name('dashboard.kesehatan');
+>>>>>>> a6757eb88c6c4b435faf5d864f3fbb1a7244a1cc
 //nanti tambahkan id
 Route::get('/admin/kordinator/rekamsiswa', [DataController::class, 'rekamsiswa'])->name('rekam.siswa');
 Route::get('/admin/kordinator/rekamsiswi', [DataController::class, 'rekamsiswi'])->name('rekam.siswi');
@@ -50,6 +61,11 @@ Route::get('/admin/kordinator/rekamsiswi', [DataController::class, 'rekamsiswi']
 
 
 //route menuju form tambah
+<<<<<<< HEAD
+Route::get('/admin/kordinator/tambahpasien',[DataController::class,'tambahpasien'])->name('tambah.pasien');
+//menuju form rekam medis
+Route::get('/admin/kordinator/datarekammedis',[DataController::class,'datarekammedis'])->name('data.rekammedis');
+=======
 Route::get('/admin/kordinator/tambahpasien', [DataController::class, 'tambahpasien'])->name('tambah.pasien');
 
 
@@ -62,5 +78,3 @@ Route::get('/', function () {
 
 Route::get('/landing', [PageController::class, 'landing'])->name('landing');
 Route::get('/about', [PageController::class, 'about'])->name('about');
-Route::get('/login', [PageController::class, 'login'])->name('login');
-Route::get('/siswa', [PageController::class, 'siswa'])->name('siswa');
