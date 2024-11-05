@@ -4,10 +4,10 @@
     <div class="d-sm-flex align-items-center justify-content-between border-bottom">
         <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active ps-0" id="home-tab" data-bs-toggle="tab" href="#tambahdatapasiensiswa" role="tab"aria-controls="tambahdatapasiensiswa" aria-selected="true">Pasien Belum Berobat</a>
+                <a class="nav-link active ps-0" id="home-tab" data-bs-toggle="tab" href="#tambahdatapasiensiswa" role="tab"aria-controls="tambahdatapasiensiswa" aria-selected="true">Tambah Pasien Siswa</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#tambahdatapasiensiswi" role="tab" aria-selected="false">Pasien Sudah Berobat</a>
+                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#tambahdatapasiensiswi" role="tab" aria-selected="false">Tambah Pasien Siswi</a>
             </li>
         </ul>
     </div>

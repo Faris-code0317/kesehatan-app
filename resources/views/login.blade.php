@@ -97,13 +97,16 @@ height: 100%;
                   <a href="#!" class="text-body">Forgot password?</a>
                 </div>
 
-                <div class="d-grid gap-2">
+                <div class="d-grid gap-2 mb-4">
                     <button name="submit" type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
                         <i class="fas fa-sign-in-alt"></i> Login
                     </button>
                 </div>
 
               </form>
+              <div class="d-grid gap-2">
+                <a href="{{ route('landing.page') }}" class="btn btn-success btn-lg" style="width: 100%;"><i class="fas fa-sign-in-alt"></i> Landing Page</a>
+            </div>
             </div>
           </div>
         </div>
