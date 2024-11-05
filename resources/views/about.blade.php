@@ -26,10 +26,10 @@
     <link href="{{ asset('poskess/lib/lightbox/css/lightbox.min.css')}}" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{ asset('poskess/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('poskess/css/bootstrap.min.css?v2+')}}" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="{{ asset('poskess/css/style.css')}}" rel="stylesheet">
+    <link href="{{ asset('poskess/css/style.css?v2+')}}" rel="stylesheet">
 </head>
 
 <body>
@@ -84,8 +84,8 @@
             <div class="navbar-nav ms-auto p-lg-0">
                 <a href="/" class="nav-item nav-link">Home</a>
                 <a href="" class="nav-item nav-link">Rekam Medis</a>
-                <a href="service.html" class="nav-item nav-link">Siswa</a>
-                <a href="{{ route('about')}}" class="nav-item nav-link active">Tentang</a>
+                <a href="{{ route('siswa')}}" class="nav-item nav-link">Siswa</a>
+                <a href="#" class="nav-item nav-link active">Tentang</a>
                 {{-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu bg-light m-0">
