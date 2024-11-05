@@ -39,7 +39,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="pages/forms/basic_elements.html">
+        <a class="nav-link" href="{{ route('data.rekammedis') }}">
           <i class="ti-layout-list-post menu-icon"></i>
           <span class="menu-title">Rekam Medis</span>
         </a>

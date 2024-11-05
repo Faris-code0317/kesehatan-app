@@ -68,6 +68,14 @@
                   </select>
               </div>
 
+              <div class="mb-3">
+                <label for="nama_dokter" class="form-label">Nama Dokter</label>
+                {{-- <input type="text" name="nama_dokter" id="nama_dokter" class="form-control @error('nama_dokter') is-invalid @enderror">
+                @error('nama_dokter')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror --}}
+                <input type="text" name="nama_dokter" id="nama_dokter" class="form-control text-dark" required>
+            </div>
 
             <div class="mb-3">
                 <label for="tanggal_sakit" class="form-label">Tanggal Sakit</label>
@@ -85,6 +93,15 @@
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror --}}
                 <input type="date" name="tanggal_berobat" id="tanggal_berobat" class="form-control text-dark" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="jumlah_kunjungan" class="form-label">Jumlah Kunjungan</label>
+                {{-- <input type="text" name="jumlah_kunjungan" id="jumlah_kunjungan" class="form-control @error('jumlah_kunjungan') is-invalid @enderror">
+                @error('jumlah_kunjungan')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror --}}
+                <input type="number" name="jumlah_kunjungan" id="jumlah_kunjungan" class="form-control text-dark" required>
             </div>
 
             <div class="mb-3">

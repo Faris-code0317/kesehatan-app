@@ -55,8 +55,14 @@
   <!-- endinject -->
   <!-- Custom js for this page-->
   <script src="{{ asset('template-admin/js/dashboard.js')}}"></script>
+  <script src="{{ asset('bootstrap.min.js') }}"></script>
+  <script src="{{ asset('jquery-3.5.1.slim.min.js') }}"></script>
+  <script src="{{ asset('popper.min.js') }}"></script>
 
   <!-- End custom js for this page-->
+  <script src="{{ asset('argon/assets/js/core/bootstrap.min.js') }}"></script>
+
+
 </body>
 
 </html>
