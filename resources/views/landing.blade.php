@@ -90,7 +90,7 @@
             <div class="navbar-nav ms-auto p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="" class="nav-item nav-link">Rekam Medis</a>
-                <a href="{{ route('siswa')}}" class="nav-item nav-link">Siswa</a>
+                <a href="#" class="nav-item nav-link">Siswa</a>
                 <a href="{{ route('about')}}" class="nav-item nav-link">Tentang</a>
                 {{-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -104,7 +104,7 @@
                 </div> --}}
                 {{-- <a href="contact.html" class="nav-item nav-link">Contact</a> --}}
             </div>
-            <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Check<i
+            <a href="{{route('login')}}" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Login<i
                     class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>

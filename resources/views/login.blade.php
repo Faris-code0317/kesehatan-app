@@ -77,7 +77,7 @@
 <body>
     <section class="vh-100">
         <div class="">
-            <a href="{{ route('landing')}}" class="btn btn-danger">back</a>
+            <a href="{{ route('landing.page')}}" class="btn btn-danger">back</a>
         </div>
         <div class="container-fluid h-custom">
             <div class="row d-flex justify-content-center align-items-center h-100">
@@ -128,9 +128,6 @@
                 </div>
 
               </form>
-              <a href="{{ route('landing.page') }}" class="btn btn-success btn-lg" style="width:100%">
-                <i class="fas fa-sign-in-alt"></i> Landing Page
-              </a>
             </div>
           </div>
         </div>

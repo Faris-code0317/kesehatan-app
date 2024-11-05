@@ -84,7 +84,7 @@
             <div class="navbar-nav ms-auto p-lg-0">
                 <a href="/" class="nav-item nav-link">Home</a>
                 <a href="" class="nav-item nav-link">Rekam Medis</a>
-                <a href="{{ route('siswa')}}" class="nav-item nav-link">Siswa</a>
+                <a href="#" class="nav-item nav-link">Siswa</a>
                 <a href="#" class="nav-item nav-link active">Tentang</a>
                 {{-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
