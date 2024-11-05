@@ -38,7 +38,24 @@
         <span class="ms-auto">BERBASIS INDUSTRI 4.0</span>
     </div>
 </footer>
+<script>
+    function searchSiswa() {
+                const input = document.getElementById('searchInput');
+                const filter = input.value.toLowerCase();
+                const rows = document.querySelectorAll('#siswaTable tbody tr'); // Hanya ambil baris dalam tbody
 
+                rows.forEach(row => {
+                    const nameCell = row.cells[1]; // Asumsi nama siswa ada di kolom kedua
+                    if (nameCell) {
+                        const txtValue = nameCell.textContent || nameCell.innerText;
+                        row.style.display = txtValue.toLowerCase().indexOf(filter) > -1 ? "" : "none";
+                    }
+                });
+            }
+
+            // Event listener untuk input pencarian
+            document.getElementById('searchInput').addEventListener('keyup', searchSiswa);
+</script>
   <!-- container-scroller -->
 
   <!-- plugins:js -->

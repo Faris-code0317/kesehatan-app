@@ -19,19 +19,6 @@
           </ul>
         </div>
       </li>
-      {{-- <li class="nav-item">
-        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-          <i class="ti-palette menu-icon"></i>
-          <span class="menu-title">Tambah Data Pasien</span>
-          <i class="menu-arrow"></i>
-        </a>
-        <div class="collapse" id="ui-basic">
-          <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="{{ route('tambah.siswa') }}">Pasien Siswa</a></li>
-            <li class="nav-item"> <a class="nav-link" href="{{ route('tambah.siswi') }}">Pasien Siswi</a></li>
-          </ul>
-        </div>
-      </li> --}}
       <li class="nav-item">
         <a class="nav-link" href="{{ route('tambah.pasien') }}">
           <i class="ti-view-list-alt menu-icon"></i>

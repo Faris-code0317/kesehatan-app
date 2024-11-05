@@ -114,7 +114,7 @@
         </li>
         <li class="nav-item nav-profile dropdown">
             <div>
-                <a href="/logout" class="btn btn-primary">Logout >></a>
+                <a href="/logout" class="btn btn-primary" style="border-radius: 8px">Logout >></a>
             </div>
         </li>
       </ul>
