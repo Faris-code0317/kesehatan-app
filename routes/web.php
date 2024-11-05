@@ -5,6 +5,12 @@ use App\Http\Controllers\DataController;
 use App\Http\Controllers\SesiController;
 use Illuminate\Support\Facades\Route;
 
+//Buat LandingPage//
+
+use App\Http\Controllers\PageController;
+
+//--//
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,32 +23,41 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::middleware(['guest'])->group(function(){
+Route::middleware(['guest'])->group(function () {
 
-    Route::get('/',[SesiController::class, 'index'])->name('login');
-Route::post('/',[SesiController::class, 'login']);
-
+    Route::get('/', [SesiController::class, 'index'])->name('login');
+    Route::post('/', [SesiController::class, 'login']);
 });
-Route::get('/home',function(){
+Route::get('/home', function () {
     return redirect('/admin');
 });
 
 
-Route::middleware(['auth'])->group(function(){
-    Route::get('/admin',[AdminController::class,'index']);
-    Route::get('/admin/operator',[AdminController::class,'operator'])->middleware(('userAkses:operator'));
-    Route::get('/admin/kordinator',[AdminController::class,'kordinator'])->middleware(('userAkses:kordinator'));
-    Route::get('/logout',[SesiController::class,'logout']);
+Route::middleware(['auth'])->group(function () {
+    Route::get('/admin', [AdminController::class, 'index']);
+    Route::get('/admin/operator', [AdminController::class, 'operator'])->middleware(('userAkses:operator'));
+    Route::get('/admin/kordinator', [AdminController::class, 'kordinator'])->middleware(('userAkses:kordinator'));
+    Route::get('/logout', [SesiController::class, 'logout']);
 });
-Route::get('/admin/kordinator/siswa',[DataController::class,'datasiswa'])->name('data.pasien');
-Route::get('/admin/kordinator/siswi',[DataController::class,'datasiswi'])->name('data.siswi');
-Route::get('/admin/kordinator/dashboard',[DataController::class,'dashboard'])->name('dashboard.kesehatan');
+Route::get('/admin/kordinator/siswa', [DataController::class, 'datasiswa'])->name('data.pasien');
+Route::get('/admin/kordinator/siswi', [DataController::class, 'datasiswi'])->name('data.siswi');
+Route::get('/admin/kordinator/dashboard', [DataController::class, 'dashboard'])->name('dashboard.kesehatan');
 //nanti tambahkan id
-Route::get('/admin/kordinator/rekamsiswa',[DataController::class,'rekamsiswa'])->name('rekam.siswa');
-Route::get('/admin/kordinator/rekamsiswi',[DataController::class,'rekamsiswi'])->name('rekam.siswi');
+Route::get('/admin/kordinator/rekamsiswa', [DataController::class, 'rekamsiswa'])->name('rekam.siswa');
+Route::get('/admin/kordinator/rekamsiswi', [DataController::class, 'rekamsiswi'])->name('rekam.siswi');
 //tambahkan route::putnya di bawah sini
 
 
 
 //route menuju form tambah
-Route::get('/admin/kordinator/tambahpasien',[DataController::class,'tambahpasien'])->name('tambah.pasien');
+Route::get('/admin/kordinator/tambahpasien', [DataController::class, 'tambahpasien'])->name('tambah.pasien');
+
+
+
+
+//LANDING PAGE//
+Route::get('/', function () {
+    return view('landing');
+});
+
+Route::get('/about', [PageController::class, 'about'])->name('about');
