@@ -42,8 +42,6 @@ Route::middleware(['auth'])->group(function(){
 Route::get('/admin/kordinator/dashboard',[DataController::class,'dashboard'])->middleware(('userAkses:kordinator'))->name('dashboard.kesehatan');
     Route::get('/logout',[SesiController::class,'logout']);
 });
-Route::get('/admin/kordinator/siswa',[DataController::class,'datasiswa'])->name('data.pasien');
-Route::get('/admin/kordinator/siswi',[DataController::class,'datasiswi'])->name('data.siswi');
 
 Route::get('/admin/kordinator/siswa', [DataController::class, 'datasiswa'])->name('data.pasien');
 Route::get('/admin/kordinator/siswi', [DataController::class, 'datasiswi'])->name('data.siswi');
