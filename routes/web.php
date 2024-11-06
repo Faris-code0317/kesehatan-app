@@ -23,9 +23,7 @@ use App\Http\Controllers\PageController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-//LANDING PAGE//
-Route::get('landing', [PageController::class, 'landing'])->name('landing.page');
-Route::get('landing/about', [PageController::class, 'about'])->name('about');
+
 
 Route::middleware(['guest'])->group(function () {
 
@@ -66,6 +64,9 @@ Route::get('/admin/kordinator/datarekammedis',[DataController::class,'datarekamm
 Route::get('/admin/kordinator/tambahpasien', [DataController::class, 'tambahpasien'])->name('tambah.pasien');
 
 
+//LANDING PAGE
 
-
+Route::get('landing', [PageController::class, 'landing'])->name('landing');
+Route::get('about', [PageController::class, 'about'])->name('about');
+Route::get('siswa', [PageController::class, 'siswa'])->name('siswa');
 
