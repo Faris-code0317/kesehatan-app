@@ -62,4 +62,21 @@ class pasiensiswicontroller extends Controller
 
 
     }
+
+    public function profilepasien(string $id){
+        $client = new Client();
+        $url = "http://127.0.0.1:8000/api/berobatpasiensiswi/$id";
+        $response = $client->request('GET', $url);
+        $content = $response->getBody()->getContents();
+        $contentArray = json_decode($content, true);
+
+        if ($contentArray['status'] != true) {
+            $error = $contentArray['message'];
+            return redirect()->to('admin/kordinator/siswi')->withErrors($error);
+        } else {
+            $datapasiensiswi = $contentArray['datapasiensiswi'];
+            return view('admin.profilesakitsiswi', ['datapasiensiswi' => $datapasiensiswi]);
+    }
+
+}
 }

@@ -238,7 +238,8 @@
                                                         <td>{{ $item['tanggal_sakit'] }}</td>
                                                         <td>{{ $item['tanggal_berobat'] }}</td>
                                                         <td class="d-flex">
-                                                            <a href="#" class="btn btn-success">Edit</a>
+                                                            <a href="{{ route('profile.pasien', $item['id']) }}" class="btn btn-outline-success">Show</a>
+                                                            <a href="#" class="btn btn-outline-warning" style="margin-left: 2px">Edit</a>
                                                         </td>
                                                     </tr>
                                                     @endforeach

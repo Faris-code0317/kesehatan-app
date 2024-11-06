@@ -52,6 +52,9 @@ Route::get('/admin/kordinator/rekamsiswi', [DataController::class, 'rekamsiswi']
 //tambahkan route::putnya di bawah sini
 
 
+//menuju form data lengkap pasien
+Route::get('/admin/kordinator/profilepasien/{id}',[pasiensiswacontroller::class,'profilepasien'])->name('profile.pasien');
+Route::get('/admin/kordinator/profilepasiensiswi/{id}',[pasiensiswicontroller::class,'profilepasien'])->name('profile.pasiensiswi');
 
 //route menuju form tambah
 Route::get('/admin/kordinator/tambahpasien',[DataController::class,'tambahpasien'])->name('tambah.pasien');

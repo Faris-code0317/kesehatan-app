@@ -21,11 +21,10 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                    <a class="btn btn-link" href="{{ route('landing') }}">Home</a>
+                    <a class="btn btn-link" href="">Rekam Medis</a>
+                    <a class="btn btn-link" href="{{ route('siswa') }}">Siswa</a>
+                    <a class="btn btn-link" href="{{ route('about') }}">Tentang</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Project Gallery</h5>
@@ -77,6 +76,25 @@
                 </div>
             </div>
         </div>
+        <div class="container py-5">
+            <div class="copyright">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <h5 class="text-white mb-4">Developed Team</h5>
+                        <a class="btn btn-link" href="">Abdul Muhith Faris M</a>
+                        <a class="btn btn-link" href="">Taufik Hidayat</a>
+                        <a class="btn btn-link" href="">Michail Ibnu Qalbi</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 ">
+                        <h5 class="text-white mb-4 text-center">Tefatie Team</h5>
+                        <a class="btn btn-link" href="">Home</a>
+                        <a class="btn btn-link" href="">Rekam Medis</a>
+                        <a class="btn btn-link" href="">Siswa</a>
+                        <a class="btn btn-link" href="">Tentang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="copyright">
                 <div class="row">
@@ -85,9 +103,9 @@
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-                        <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a> <br> Created
-                        By <a href="">Tefatie</a>
+                        Developed By <a href="">Three Person</a>
+                        <br>Distributed By: <a href="">Pondok Pesantren AL-ITTIHAD</a> <br> Created
+                        By <a href="">Tefatie Team</a>
                     </div>
                 </div>
             </div>
