@@ -32,7 +32,7 @@
                             @csrf
                              <div class="mb-3">
                                 <label for="nama_lengkap" class="form-label">Nama Lengkap</label>
-                                <input type="text" name="nama_lengkap" id="nama_lengkap" value="{{ isset($data['nama_lengkap'])?$data['nama_lengkap']:old('nama_lengkap') }}" class="form-control @error('nama_lengkap') is-invalid @enderror" required>
+                                <input type="text" name="nama_lengkap" id="nama_lengkap" class="form-control @error('nama_lengkap') is-invalid @enderror" required>
                                 @error('nama')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
@@ -40,7 +40,7 @@
 
                             <div class="mb-3">
                                 <label for="kelas" class="form-label">Kelas</label>
-                                <input type="text" name="kelas" id="kelas" value="{{ isset($data['kelas'])?$data['kelas']:old('kelas') }}" class="form-control @error('kelas') is-invalid @enderror" required>
+                                <input type="text" name="kelas" id="kelas" class="form-control @error('kelas') is-invalid @enderror" required>
                                 @error('kelas')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
@@ -48,7 +48,7 @@
 
                             <div class="mb-3">
                                 <label for="wali_kelas" class="form-label">Wali Kelas</label>
-                                <input type="text" name="wali_kelas" id="wali_kelas" value="{{ isset($data['wali_kelas'])?$data['wali_kelas']:old('wali_kelas') }}" class="form-control @error('wali_kelas') is-invalid @enderror" required>
+                                <input type="text" name="wali_kelas" id="wali_kelas"  class="form-control @error('wali_kelas') is-invalid @enderror" required>
                                 @error('wali_kelas')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
@@ -56,7 +56,7 @@
 
                             <div class="mb-3">
                                 <label for="keluhan" class="form-label">Keluhan</label>
-                                <input type="text" name="keluhan" id="keluhan" value="{{ isset($data['keluhan'])?$data['keluhan']:old('keluhan') }}" class="form-control @error('keluhan') is-invalid @enderror" required>
+                                <input type="text" name="keluhan" id="keluhan" class="form-control @error('keluhan') is-invalid @enderror" required>
                                 @error('keluhan')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
@@ -84,7 +84,7 @@
 
                             <div class="mb-3">
                                 <label for="tanggal_sakit" class="form-label">Tanggal Sakit</label>
-                                <input type="date" name="tanggal_sakit" id="tanggal_sakit" value="{{ isset($data['tanggal_sakit'])?$data['tanggal_sakit']:old('tanggal_sakit') }}" class="form-control @error('tanggal_sakit') is-invalid @enderror" required>
+                                <input type="date" name="tanggal_sakit" id="tanggal_sakit"  class="form-control @error('tanggal_sakit') is-invalid @enderror" required>
                                 @error('tanggal_sakit')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
@@ -149,7 +149,7 @@
                             @csrf
                              <div class="mb-3">
                                 <label for="nama_lengkap" class="form-label">Nama Lengkap</label>
-                                <input type="text" name="nama_lengkap" id="nama_lengkap" value="{{ isset($data['nama_lengkap'])?$data['nama_lengkap']:old('nama_lengkap') }}" class="form-control @error('nama_lengkap') is-invalid @enderror" required>
+                                <input type="text" name="nama_lengkap" id="nama_lengkap"  class="form-control @error('nama_lengkap') is-invalid @enderror" required>
                                 @error('nama')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
@@ -157,7 +157,7 @@
 
                             <div class="mb-3">
                                 <label for="kelas" class="form-label">Kelas</label>
-                                <input type="text" name="kelas" id="kelas" value="{{ isset($data['kelas'])?$data['kelas']:old('kelas') }}" class="form-control @error('kelas') is-invalid @enderror" required>
+                                <input type="text" name="kelas" id="kelas" class="form-control @error('kelas') is-invalid @enderror" required>
                                 @error('kelas')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
@@ -165,7 +165,7 @@
 
                             <div class="mb-3">
                                 <label for="wali_kelas" class="form-label">Wali Kelas</label>
-                                <input type="text" name="wali_kelas" id="wali_kelas" value="{{ isset($data['wali_kelas'])?$data['wali_kelas']:old('wali_kelas') }}" class="form-control @error('wali_kelas') is-invalid @enderror" required>
+                                <input type="text" name="wali_kelas" id="wali_kelas"class="form-control @error('wali_kelas') is-invalid @enderror" required>
                                 @error('wali_kelas')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
@@ -173,7 +173,7 @@
 
                             <div class="mb-3">
                                 <label for="keluhan" class="form-label">Keluhan</label>
-                                <input type="text" name="keluhan" id="keluhan" value="{{ isset($data['keluhan'])?$data['keluhan']:old('keluhan') }}" class="form-control @error('keluhan') is-invalid @enderror" required>
+                                <input type="text" name="keluhan" id="keluhan" class="form-control @error('keluhan') is-invalid @enderror" required>
                                 @error('keluhan')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
@@ -201,7 +201,7 @@
 
                             <div class="mb-3">
                                 <label for="tanggal_sakit" class="form-label">Tanggal Sakit</label>
-                                <input type="date" name="tanggal_sakit" id="tanggal_sakit" value="{{ isset($data['tanggal_sakit'])?$data['tanggal_sakit']:old('tanggal_sakit') }}" class="form-control @error('tanggal_sakit') is-invalid @enderror" required>
+                                <input type="date" name="tanggal_sakit" id="tanggal_sakit"class="form-control @error('tanggal_sakit') is-invalid @enderror" required>
                                 @error('tanggal_sakit')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
