@@ -82,9 +82,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-lg-0">
-                <a href="{{ route('landing.page') }}" class="nav-item nav-link">Home</a>
+                <a href="{{ route('landing') }}" class="nav-item nav-link">Home</a>
                 <a href="" class="nav-item nav-link">Rekam Medis</a>
-                <a href="#" class="nav-item nav-link">Siswa</a>
+                <a href="{{ route('siswa')}}" class="nav-item nav-link">Siswa</a>
                 <a href="#" class="nav-item nav-link active">Tentang</a>
                 <a href="{{ route('login') }}" class="btn btn-primary rounded-0 py-4 px-lg-5 d-lg-block">Login<i class="fa fa-arrow-right ms-3"></i></a>
                 {{-- <div class="nav-item dropdown">

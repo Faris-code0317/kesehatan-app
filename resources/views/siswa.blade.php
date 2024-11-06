@@ -86,7 +86,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-lg-0">
-                <a href="/" class="nav-item nav-link">Home</a>
+                <a href="{{ route('landing')}}" class="nav-item nav-link">Home</a>
                 <a href="" class="nav-item nav-link">Rekam Medis</a>
                 <a href="#" class="nav-item nav-link active">Siswa</a>
                 <a href="{{ route('about') }}" class="nav-item nav-link">Tentang</a>
@@ -116,7 +116,7 @@
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">Tentang</li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Siswa</li>
                 </ol>
             </nav>
         </div>
