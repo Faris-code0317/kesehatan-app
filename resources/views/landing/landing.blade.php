@@ -75,7 +75,7 @@
     <div class="container-fluid d-flex align-items-center" style="height: 100vh">
         <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 700px;">
             <h6 class="text-primary">Visi</h6>
-            <h1 class="mb-4 text-capitalize">kami berkomitmen untuk membina kesehatan siswa melalui layanan yang luar
+            <h1 class="mb-4 text-capitalize">kami berkomitmen untuk membina kesehatan para pelajar melalui layanan yang luar
                 biasa</h1>
         </div>
     </div>
@@ -314,7 +314,7 @@
                 <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
                     <div class="position-relative h-100">
                         <img class="position-absolute img-fluid w-100 h-100"
-                            src="{{ asset('poskess/img/feature.jpg') }}" style="object-fit: cover;" alt="">
+                            src="{{ asset('img/edelweis.png') }}" style="object-fit: cover; image-rendering: auto;" alt="">
                     </div>
                 </div>
             </div>

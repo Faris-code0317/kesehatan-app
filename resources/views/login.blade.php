@@ -77,7 +77,7 @@
 <body>
     <section class="vh-100">
         <div class="">
-            <a href="{{ route('landing.page')}}" class="btn btn-danger">Back To Landing Page</a>
+            <a href="{{ route('landing')}}" class="btn btn-danger">Back To Landing Page</a>
         </div>
         <div class="container-fluid h-custom">
             <div class="row d-flex justify-content-center align-items-center h-100">
@@ -131,7 +131,7 @@
             </div>
           </div>
         </div>
-        <div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary"
+        <div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-center py-4 px-4 px-xl-5 bg-primary"
             style="margin-top: 200px">
             <!-- Copyright -->
             <div class="text-white mb-3 mb-md-0">
