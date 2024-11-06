@@ -1,17 +1,31 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 
 class DataController extends Controller
 {
-
+    //tambahkan method get lagi untuk mengambil data pasien yang belum berobat
     public function datasiswa(){
-        return view('admin.index');
+        $client = new Client();
+        $url = "http://127.0.0.1:8000/api/berobatpasiensiswa";
+        $response = $client->request('GET', $url);
+        $content = $response->getBody()->getContents();
+        $contentArray = json_decode($content, true);
+        $datapasiensiswa = $contentArray['datapasiensiswa'];
+        return view('admin.index', ['datapasiensiswa'=> $datapasiensiswa]);
     }
+    //tambahkan method get lagi untuk mengambil data pasien yang belum berobat
     public function datasiswi(){
-        return view('admin.dtsiswi');
+        $client = new Client();
+        $url = "http://127.0.0.1:8000/api/berobatpasiensiswi";
+        $response = $client->request('GET', $url);
+        $content = $response->getBody()->getContents();
+        $contentArray = json_decode($content, true);
+        $datapasiensiswi = $contentArray['datapasiensiswi'];
+        return view('admin.dtsiswi', ['datapasiensiswi'=> $datapasiensiswi]);
+
     }
 
     public function rekamsiswa(){
@@ -31,7 +45,20 @@ class DataController extends Controller
     }
 
     public function datarekammedis(){
-        return view('admin.rekammedis.data');
+        $client = new Client();
+        $url = "http://127.0.0.1:8000/api/berobatpasiensiswa";
+        $response = $client->request('GET', $url);
+        $content = $response->getBody()->getContents();
+        $contentArray = json_decode($content, true);
+        $datapasiensiswa = $contentArray['datapasiensiswa'];
+
+        $clientsiswi = new Client();
+        $urlsiswi = "http://127.0.0.1:8000/api/berobatpasiensiswi";
+        $responsesiswi = $clientsiswi->request('GET', $urlsiswi);
+        $contentsiswi = $responsesiswi->getBody()->getContents();
+        $contentArraysiswi = json_decode($contentsiswi, true);
+        $datapasiensiswi = $contentArraysiswi['datapasiensiswi'];
+        return view('admin.rekammedis.data', ['datapasiensiswa'=> $datapasiensiswa, 'datapasiensiswi'=>$datapasiensiswi]);
     }
 
 }

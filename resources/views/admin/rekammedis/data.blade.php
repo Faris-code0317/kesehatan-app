@@ -97,21 +97,23 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody class="text-center">
+                                                        @foreach($datapasiensiswa as $no=>$item)
                                                         <tr>
-                                                            <td>1</td>
-                                                            <td>Abdul Rian</td>
-                                                            <td>XI A PPLG</td>
-                                                            <td>Demam Tifoid</td>
-                                                            <td>Dr.Hadi</td>
-                                                            <td>12/10/2024</td>
-                                                            <td>1</td>
-                                                            <td>Azithromycin</td>
-                                                            <td>jangan Minum Air Berwarna</td>
+                                                            <td>{{ $no+1 }}</td>
+                                                            <td>{{ $item['nama_lengkap'] }}</td>
+                                                            <td>{{ $item['kelas'] }}</td>
+                                                            <td>{{ $item['keluhan'] }}</td>
+                                                            <td>{{ $item['nama_dokter'] }}</td>
+                                                            <td>{{ $item['tanggal_berobat'] }}</td>
+                                                            <td>{{ $item['jumlah_kunjungan'] }}</td>
+                                                            <td>{{ $item['nama_obat'] }}</td>
+                                                            <td>{{ $item['catatan_dokter'] }}</td>
                                                             <td class="d-flex">
                                                                 <a href="#" class="btn btn-primary mr-4">Edit</a>
                                                                 <a href="#" class="btn btn-warning">Show</a>
                                                             </td>
                                                         </tr>
+                                                        @endforeach
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -148,7 +150,23 @@
                                                             </tr>
                                                         </thead>
                                                         <tbody class="text-center">
-
+                                                            @foreach($datapasiensiswi as $no=>$item)
+                                                        <tr>
+                                                            <td>{{ $no+1 }}</td>
+                                                            <td>{{ $item['nama_lengkap'] }}</td>
+                                                            <td>{{ $item['kelas'] }}</td>
+                                                            <td>{{ $item['keluhan'] }}</td>
+                                                            <td>{{ $item['nama_dokter'] }}</td>
+                                                            <td>{{ $item['tanggal_berobat'] }}</td>
+                                                            <td>{{ $item['jumlah_kunjungan'] }}</td>
+                                                            <td>{{ $item['nama_obat'] }}</td>
+                                                            <td>{{ $item['catatan_dokter'] }}</td>
+                                                            <td class="d-flex">
+                                                                <a href="#" class="btn btn-primary mr-4">Edit</a>
+                                                                <a href="#" class="btn btn-warning">Show</a>
+                                                            </td>
+                                                        </tr>
+                                                        @endforeach
                                                         </tbody>
                                                     </table>
                                                 </div>
