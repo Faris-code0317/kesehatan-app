@@ -21,7 +21,9 @@ use App\Http\Controllers\PageController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+//LANDING PAGE//
+Route::get('landing', [PageController::class, 'landing'])->name('landing.page');
+Route::get('landing/about', [PageController::class, 'about'])->name('about');
 
 Route::middleware(['guest'])->group(function () {
 
@@ -33,12 +35,22 @@ Route::get('/home', function () {
 });
 
 
-Route::middleware(['auth'])->group(function () {
-    Route::get('/admin', [AdminController::class, 'index']);
-    Route::get('/admin/operator', [AdminController::class, 'operator'])->middleware(('userAkses:operator'));
-    Route::get('/admin/kordinator', [AdminController::class, 'kordinator'])->middleware(('userAkses:kordinator'));
-    Route::get('/logout', [SesiController::class, 'logout']);
+
+Route::middleware(['auth'])->group(function(){
+    Route::get('/admin',[AdminController::class,'index']);
+    Route::get('/admin/operator',[AdminController::class,'operator'])->middleware(('userAkses:operator'));
+Route::get('/admin/kordinator/dashboard',[DataController::class,'dashboard'])->middleware(('userAkses:kordinator'))->name('dashboard.kesehatan');
+    Route::get('/logout',[SesiController::class,'logout']);
 });
+Route::get('/admin/kordinator/siswa',[DataController::class,'datasiswa'])->name('data.pasien');
+Route::get('/admin/kordinator/siswi',[DataController::class,'datasiswi'])->name('data.siswi');
+
+// Route::middleware(['auth'])->group(function () {
+//     Route::get('/admin', [AdminController::class, 'index']);
+//     Route::get('/admin/operator', [AdminController::class, 'operator'])->middleware(('userAkses:operator'));
+//     Route::get('/admin/kordinator', [AdminController::class, 'kordinator'])->middleware(('userAkses:kordinator'));
+//     Route::get('/logout', [SesiController::class, 'logout']);
+// });
 Route::get('/admin/kordinator/siswa', [DataController::class, 'datasiswa'])->name('data.pasien');
 Route::get('/admin/kordinator/siswi', [DataController::class, 'datasiswi'])->name('data.siswi');
 Route::get('/admin/kordinator/dashboard', [DataController::class, 'dashboard'])->name('dashboard.kesehatan');
@@ -50,15 +62,14 @@ Route::get('/admin/kordinator/rekamsiswi', [DataController::class, 'rekamsiswi']
 
 
 //route menuju form tambah
+Route::get('/admin/kordinator/tambahpasien',[DataController::class,'tambahpasien'])->name('tambah.pasien');
+//menuju form rekam medis
+Route::get('/admin/kordinator/datarekammedis',[DataController::class,'datarekammedis'])->name('data.rekammedis');
 Route::get('/admin/kordinator/tambahpasien', [DataController::class, 'tambahpasien'])->name('tambah.pasien');
 
 
 
 
-//LANDING PAGE//
-Route::get('/', function () {
-    return view('landing');
-});
 
 Route::get('/landing', [PageController::class, 'landing'])->name('landing');
 Route::get('/about', [PageController::class, 'about'])->name('about');

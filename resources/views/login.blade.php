@@ -77,7 +77,7 @@
 <body>
     <section class="vh-100">
         <div class="">
-            <a href="{{ route('landing')}}" class="btn btn-danger">back</a>
+            <a href="{{ route('landing.page')}}" class="btn btn-danger">back</a>
         </div>
         <div class="container-fluid h-custom">
             <div class="row d-flex justify-content-center align-items-center h-100">
@@ -121,15 +121,15 @@
                             <a href="#!" class="text-body">Forgot password?</a>
                         </div>
 
-                        <div class="d-grid gap-2">
-                            <button name="submit" type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
-                                <i class="fas fa-sign-in-alt"></i> Login
-                            </button>
-                        </div>
-
-                    </form>
+                <div class="d-grid gap-2">
+                    <button name="submit" type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </button>
                 </div>
+
+              </form>
             </div>
+          </div>
         </div>
         <div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary"
             style="margin-top: 200px">

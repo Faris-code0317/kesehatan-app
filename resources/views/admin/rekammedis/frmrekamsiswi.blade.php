@@ -83,7 +83,7 @@
                 @error('tanggal_sakit')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror --}}
-                <input type="text" name="tanggal_sakit" id="tanggal_sakit" class="form-control text-dark" value="10/11/2024" required readonly>
+                <input type="date" name="tanggal_sakit" id="tanggal_sakit" class="form-control text-dark" value="10/11/2024" required readonly>
             </div>
 
             <div class="mb-3">

@@ -13,12 +13,4 @@ class PageController extends Controller
     public function about(){
         return view('about');
     }
-
-    public function login(){
-        return view('login');
-    }
-
-    public function siswa(){
-        return view('siswa');
-    }
 }
