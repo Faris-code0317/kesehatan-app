@@ -223,10 +223,26 @@
                                                     <th>Keluhan/Gejala</th>
                                                     <th>Status Pengobatan</th>
                                                     <th>Tanggal Sakit</th>
+                                                    <th>Tanggal Berobat</th>
                                                     <th>Option</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                @foreach($datapasiensiswi as $no=>$item)
+                                                <tr>
+                                                    <td>{{ $no+1 }}</td>
+                                                    <td>{{ $item['nama_lengkap'] }}</td>
+                                                    <td>{{ $item['kelas'] }}</td>
+                                                    <td>{{ $item['wali_kelas'] }}</td>
+                                                    <td>{{ $item['keluhan'] }}</td>
+                                                    <td>{{ $item['status_pengobatan'] }}</td>
+                                                    <td>{{ $item['tanggal_sakit'] }}</td>
+                                                    <td>{{ $item['tanggal_berobat'] }}</td>
+                                                    <td class="d-flex">
+                                                        <a href="#" class="btn btn-success">Edit</a>
+                                                    </td>
+                                                </tr>
+                                                @endforeach
                                             </tbody>
                                         </table>
                                     </div>

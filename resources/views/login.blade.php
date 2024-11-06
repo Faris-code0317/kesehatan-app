@@ -77,7 +77,7 @@
 <body>
     <section class="vh-100">
         <div class="">
-            <a href="{{ route('landing.page')}}" class="btn btn-danger">back</a>
+            <a href="{{ route('landing.page')}}" class="btn btn-danger">Back To Landing Page</a>
         </div>
         <div class="container-fluid h-custom">
             <div class="row d-flex justify-content-center align-items-center h-100">

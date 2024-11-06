@@ -13,14 +13,22 @@ return new class extends Migration
     {
         Schema::create('berobatsiswas', function (Blueprint $table) {
             $table->id();
+            $table->string('nama_lengkap');
+            $table->string('kelas');
+            $table->string('wali_kelas');
+            $table->text('keluhan');
+            $table->string('status_pengobatan');
+            $table->string('nama_dokter');
+            $table->date('tanggal_sakit');
+            $table->date('tanggal_berobat');
+            $table->integer('jumlah_kunjungan');
+            $table->string('nama_obat');
+            $table->text('catatan_dokter');
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
+    public function down()
     {
         Schema::dropIfExists('berobatsiswas');
     }

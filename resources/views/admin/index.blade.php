@@ -227,19 +227,21 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody class="text-center">
+                                                    @foreach($datapasiensiswa as $no=>$item)
                                                     <tr>
-                                                        <td>1</td>
-                                                        <td>Abdul Rian</td>
-                                                        <td>XI A PPLG</td>
-                                                        <td>Ust Nurhadi</td>
-                                                        <td>Demam Tifoid</td>
-                                                        <td>Sudah Berobat</td>
-                                                        <td>11/10/2024</td>
-                                                        <td>12/10/2024</td>
+                                                        <td>{{ $no+1 }}</td>
+                                                        <td>{{ $item['nama_lengkap'] }}</td>
+                                                        <td>{{ $item['kelas'] }}</td>
+                                                        <td>{{ $item['wali_kelas'] }}</td>
+                                                        <td>{{ $item['keluhan'] }}</td>
+                                                        <td>{{ $item['status_pengobatan'] }}</td>
+                                                        <td>{{ $item['tanggal_sakit'] }}</td>
+                                                        <td>{{ $item['tanggal_berobat'] }}</td>
                                                         <td class="d-flex">
                                                             <a href="#" class="btn btn-success">Edit</a>
                                                         </td>
                                                     </tr>
+                                                    @endforeach
                                                 </tbody>
                                             </table>
                                         </div>
