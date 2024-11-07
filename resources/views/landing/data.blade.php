@@ -41,7 +41,7 @@
 
             <div class="tab-pane fade show active mb-5" id="siswa" role="tabpanel"
                 aria-labelledby="siswa">
-                <h2 class="bg-primary p-3 rounded">Data Siswa</h2>
+                <h2 class="bg-primary p-3 rounded-bottom">Data Siswa</h2>
                 <div class="home-tab">
                     <div class="d-sm-flex align-items-center justify-content-between border-bottom">
                         <ul class="nav nav-tabs" role="tablist">
@@ -155,7 +155,7 @@
             </div>
 
             <div class="tab-pane fade mb-5" id="siswi" role="tabpanel" aria-labelledby="siswi">
-                <h2 class="bg-primary p-3 rounded">Data Siswi</h2>
+                <h2 class="bg-primary p-3 rounded-bottom">Data Siswi</h2>
                 <div class="home-tab">
                     <div class="d-sm-flex align-items-center justify-content-between border-bottom">
                         <ul class="nav nav-tabs" role="tablist">
