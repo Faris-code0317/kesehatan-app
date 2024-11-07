@@ -71,7 +71,7 @@ Route::get('/admin/kordinator/tambahpasien', [DataController::class, 'tambahpasi
 
 Route::get('landing', [PageController::class, 'landing'])->name('landing');
 Route::get('about', [PageController::class, 'about'])->name('about');
-Route::get('siswa', [PageController::class, 'siswa'])->name('siswa');
+Route::get('data', [PageController::class, 'data'])->name('data');
 Route::get('login', [PageController::class, 'login'])->name('login');
 Route::get('pengembang', [PageController::class, 'dev'])->name('pengembang');
 

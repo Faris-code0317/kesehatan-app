@@ -44,8 +44,8 @@
                 <a href="{{ route('landing') }}"
                     class="nav-item nav-link {{ Route::is('landing') ? 'active' : '' }}">Home</a>
                 <a href="" class="nav-item nav-link {{ Route::is('') ? 'active' : '' }}">Rekam Medis</a>
-                <a href="{{ route('siswa') }}"
-                    class="nav-item nav-link {{ Route::is('siswa') ? 'active' : '' }}">Siswa</a>
+                <a href="{{ route('data') }}"
+                    class="nav-item nav-link {{ Route::is('data') ? 'active' : '' }}">Data Pelajar</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tentang</a>
                         <div class="dropdown-menu bg-light m-0 p-2 text-capitalize">

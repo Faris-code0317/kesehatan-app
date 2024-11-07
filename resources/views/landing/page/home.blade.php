@@ -33,6 +33,12 @@
     <!-- Template Stylesheet -->
     <link href="{{ asset('poskess/css/style.css?v3+') }}" rel="stylesheet">
 
+    <style>
+        td{
+            color: black;
+        }
+    </style>
+
 </head>
 
 <body>

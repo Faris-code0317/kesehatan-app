@@ -10,8 +10,8 @@ class PageController extends Controller
         return view('landing.landing');
     }
 
-    public function siswa(){
-        return view('landing.siswa');
+    public function data(){
+        return view('landing.data');
     }
 
     public function about(){

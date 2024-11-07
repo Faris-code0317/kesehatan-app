@@ -23,7 +23,7 @@
                     <h5 class="text-white mb-4">Tautan Cepat</h5>
                     <a class="btn btn-link" href="{{ route('landing') }}">Home</a>
                     <a class="btn btn-link" href="">Rekam Medis</a>
-                    <a class="btn btn-link" href="{{ route('siswa') }}">Siswa</a>
+                    <a class="btn btn-link" href="{{ route('data') }}">Data Pelajar</a>
                     <a class="btn btn-link" href="{{ route('about') }}">Tentang</a>
                     <a class="btn btn-link" href="{{ route('pengembang') }}">Tentang Pengembang</a>
                 </div>
