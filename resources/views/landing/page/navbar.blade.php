@@ -57,7 +57,7 @@
                         </div>
                     </div>
                 <a href="{{ route('login') }}"
-                    class="btn btn-primary rounded-0 py-4 px-lg-5 d-lg-block {{ Route::is('login') ? 'active' : '' }}">Login<i
+                    class="btn btn-primary rounded-0 py-4 px-lg-5 d-lg-block">Login<i
                         class="fa fa-arrow-right ms-3"></i></a>
                 {{-- <a href="contact.html" class="nav-item nav-link">Contact</a> --}}
             </div>
