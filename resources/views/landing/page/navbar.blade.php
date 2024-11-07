@@ -46,21 +46,19 @@
                 <a href="" class="nav-item nav-link {{ Route::is('') ? 'active' : '' }}">Rekam Medis</a>
                 <a href="{{ route('siswa') }}"
                     class="nav-item nav-link {{ Route::is('siswa') ? 'active' : '' }}">Siswa</a>
-                <a href="{{ route('about') }}"
-                    class="nav-item nav-link {{ Route::is('about') ? 'active' : '' }}">Tentang</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tentang</a>
+                        <div class="dropdown-menu bg-light m-0 p-2 text-capitalize">
+                            <a href="{{ route('about') }}"
+                            class="dropdown-item rounded my-1 {{ Route::is('about') ? 'active' : '' }}">tentang</a>
+
+                            <a href="{{ route('pengembang') }}"
+                            class="dropdown-item rounded my-1 {{ Route::is('pengembang') ? 'active' : '' }}">tentang pengembang</a>
+                        </div>
+                    </div>
                 <a href="{{ route('login') }}"
                     class="btn btn-primary rounded-0 py-4 px-lg-5 d-lg-block {{ Route::is('login') ? 'active' : '' }}">Login<i
                         class="fa fa-arrow-right ms-3"></i></a>
-                {{-- <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="{{ route('poskess/feature.html')}}" class="dropdown-item">Feature</a>
-                        <a href="{{ route('poskess/quote.html')}}" class="dropdown-item">Free Quote</a>
-                        <a href="{{ route('poskess/team.html')}}" class="dropdown-item">Our Team</a>
-                        <a href="{{ route('poskess/testimonial.html')}}" class="dropdown-item">Testimonial</a>
-                        <a href="{{ route('poskess/404.html')}}" class="dropdown-item">404 Page</a>
-                    </div>
-                </div> --}}
                 {{-- <a href="contact.html" class="nav-item nav-link">Contact</a> --}}
             </div>
         </div>

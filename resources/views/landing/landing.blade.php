@@ -73,7 +73,7 @@
     <!-- Feature Start -->
 
     <div class="container-fluid d-flex align-items-center" style="height: 100vh">
-        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 700px;">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 700px;">
             <h6 class="text-primary">Visi</h6>
             <h1 class="mb-4 text-capitalize">kami berkomitmen untuk membina kesehatan para pelajar melalui layanan yang luar
                 biasa</h1>
