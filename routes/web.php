@@ -56,10 +56,19 @@ Route::get('/admin/kordinator/rekamsiswi', [DataController::class, 'rekamsiswi']
 Route::get('/admin/kordinator/profilepasien/{id}',[pasiensiswacontroller::class,'profilepasien'])->name('profile.pasien');
 Route::get('/admin/kordinator/profilepasiensiswi/{id}',[pasiensiswicontroller::class,'profilepasien'])->name('profile.pasiensiswi');
 
+//menuju from edit pasien
+//siswi
+Route::get('/admin/kordinator/editpasien/{id}',[pasiensiswacontroller::class,'edit'])->name('edit.pasien');
+Route::put('/admin/kordinator/updatepasien/{id}',[pasiensiswacontroller::class,'update'])->name('update.pasien');
+//siswi
+Route::get('/admin/kordinator/editpasiensiswi/{id}',[pasiensiswicontroller::class,'edit'])->name('edit.pasiensiswi');
+Route::put('/admin/kordinator/updatepasiensiswi/{id}',[pasiensiswicontroller::class,'update'])->name('update.pasiensiswi');
+
 //route menuju form tambah
 Route::get('/admin/kordinator/tambahpasien',[DataController::class,'tambahpasien'])->name('tambah.pasien');
 Route::post('/admin/kordinator/siswa',[pasiensiswacontroller::class, 'store'])->name('tambahpasien.siswa');
 Route::post('/admin/kordinator/siswi',[pasiensiswicontroller::class, 'store'])->name('tambahpasien.siswi');
+
 //menuju form rekam medis
 Route::get('/admin/kordinator/datarekammedis',[DataController::class,'datarekammedis'])->name('data.rekammedis');
 Route::get('/admin/kordinator/tambahpasien', [DataController::class, 'tambahpasien'])->name('tambah.pasien');
