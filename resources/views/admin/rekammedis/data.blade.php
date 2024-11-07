@@ -109,7 +109,7 @@
                                                             <td>{{ $item['nama_obat'] }}</td>
                                                             <td>{{ $item['catatan_dokter'] }}</td>
                                                             <td class="d-flex">
-                                                                <a href="#" class="btn btn-primary mr-4">Edit</a>
+                                                                <a href="{{ route('edit.pasien', $item['id']) }}" class="btn btn-primary mr-4">Edit</a>
                                                                 <a href="{{ route('profile.pasien', $item['id']) }}" class="btn btn-warning">Show</a>
                                                             </td>
                                                         </tr>
@@ -162,7 +162,7 @@
                                                             <td>{{ $item['nama_obat'] }}</td>
                                                             <td>{{ $item['catatan_dokter'] }}</td>
                                                             <td class="d-flex">
-                                                                <a href="#" class="btn btn-primary mr-4">Edit</a>
+                                                                <a href="{{ route('edit.pasiensiswi', $item['id']) }}" class="btn btn-primary mr-4">Edit</a>
                                                                 <a href="{{ route('profile.pasiensiswi', $item['id']) }}" class="btn btn-warning">Show</a>
                                                             </td>
                                                         </tr>

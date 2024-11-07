@@ -240,7 +240,7 @@
                                                     <td>{{ $item['tanggal_berobat'] }}</td>
                                                     <td class="d-flex">
                                                         <a href="{{ route('profile.pasiensiswi', $item['id']) }}" class="btn btn-outline-success">Show</a>
-                                                        <a href="#" class="btn btn-outline-warning">Edit</a>
+                                                        <a href="{{ route('edit.pasiensiswi', $item['id']) }}" class="btn btn-outline-warning">Edit</a>
                                                     </td>
                                                 </tr>
                                                 @endforeach
