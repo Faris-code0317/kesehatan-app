@@ -21,4 +21,8 @@ class PageController extends Controller
     public function login(){
         return view('login');
     }
+
+    public function dev(){
+        return view('landing.pengembang');
+    }
 }

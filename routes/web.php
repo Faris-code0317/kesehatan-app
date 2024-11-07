@@ -65,10 +65,13 @@ Route::get('/admin/kordinator/datarekammedis',[DataController::class,'datarekamm
 Route::get('/admin/kordinator/tambahpasien', [DataController::class, 'tambahpasien'])->name('tambah.pasien');
 
 
+
+
 //LANDING PAGE
 
 Route::get('landing', [PageController::class, 'landing'])->name('landing');
 Route::get('about', [PageController::class, 'about'])->name('about');
 Route::get('siswa', [PageController::class, 'siswa'])->name('siswa');
 Route::get('login', [PageController::class, 'login'])->name('login');
+Route::get('pengembang', [PageController::class, 'dev'])->name('pengembang');
 
