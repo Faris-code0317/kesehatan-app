@@ -27,8 +27,8 @@ use App\Http\Controllers\PageController;
 
 Route::middleware(['guest'])->group(function () {
 
-    Route::get('/', [SesiController::class, 'index'])->name('login');
-    Route::post('/', [SesiController::class, 'login']);
+    Route::get('/', [SesiController::class, 'index']);
+    Route::post('/login', [SesiController::class, 'login']);
 });
 Route::get('/home', function () {
     return redirect('/admin');
