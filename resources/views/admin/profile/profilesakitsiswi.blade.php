@@ -1,6 +1,6 @@
-@extends('admin.bagian.main')
+@extends('admin.bagian.mainprofile')
 @section('content')
-<div class="col-md-10 grid-margin stretch-card mt-4 ms-4">
+<div class="col-md-12 grid-margin stretch-card mt-4 ms-4">
     <div class="card border-bottom-0">
         <div class="card-body pb-0">
             <div class="row">

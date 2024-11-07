@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class berobatsiswi extends Model
+class datasakitsiswa extends Model
 {
     use HasFactory;
 
-    protected $table = 'berobatsiswis';
+    protected $table = 'datasakitsiswas';
 
     protected $fillable = [
         'nama_lengkap',
@@ -17,11 +17,6 @@ class berobatsiswi extends Model
         'wali_kelas',
         'keluhan',
         'status_pengobatan',
-        'nama_dokter',
         'tanggal_sakit',
-        'tanggal_berobat',
-        'jumlah_kunjungan',
-        'nama_obat',
-        'catatan_dokter',
     ];
 }

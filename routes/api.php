@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\api\pasiensiswaberobatController;
 use App\Http\Controllers\api\pasiensiswiberobatController;
+use App\Http\Controllers\api\datasakitsiswacontroller;
+use App\Http\Controllers\api\datasakitsiswicontroller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -21,3 +23,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::apiResource('berobatpasiensiswa', pasiensiswaberobatController::class);
 Route::apiResource('berobatpasiensiswi', pasiensiswiberobatController::class);
+Route::apiResource('datasakitsiswa', datasakitsiswacontroller::class);
+Route::apiResource('datasakitsiswi', datasakitsiswicontroller::class);

@@ -14,7 +14,14 @@ class DataController extends Controller
         $content = $response->getBody()->getContents();
         $contentArray = json_decode($content, true);
         $datapasiensiswa = $contentArray['datapasiensiswa'];
-        return view('admin.index', ['datapasiensiswa'=> $datapasiensiswa]);
+
+        $clientsiswasakit = new Client();
+        $urlsiswasakit = "http://127.0.0.1:8000/api/datasakitsiswa";
+        $responsesiswasakit = $clientsiswasakit->request('GET', $urlsiswasakit);
+        $contentsiswasakit = $responsesiswasakit->getBody()->getContents();
+        $contentArraysiswasakit = json_decode($contentsiswasakit, true);
+        $datasiswasakit = $contentArraysiswasakit['datasiswasakit'];
+        return view('admin.index', ['datapasiensiswa'=> $datapasiensiswa, 'datasiswasakit' => $datasiswasakit]);
     }
     //tambahkan method get lagi untuk mengambil data pasien yang belum berobat
     public function datasiswi(){
@@ -24,7 +31,14 @@ class DataController extends Controller
         $content = $response->getBody()->getContents();
         $contentArray = json_decode($content, true);
         $datapasiensiswi = $contentArray['datapasiensiswi'];
-        return view('admin.dtsiswi', ['datapasiensiswi'=> $datapasiensiswi]);
+
+        $clientsiswisakit = new Client();
+        $urlsiswisakit = "http://127.0.0.1:8000/api/datasakitsiswi";
+        $responsesiswisakit = $clientsiswisakit->request('GET', $urlsiswisakit);
+        $contentsiswisakit = $responsesiswisakit->getBody()->getContents();
+        $contentArraysiswisakit = json_decode($contentsiswisakit, true);
+        $datasiswisakit = $contentArraysiswisakit['datasiswisakit'];
+        return view('admin.dtsiswi', ['datapasiensiswi'=> $datapasiensiswi, 'datasiswisakit' => $datasiswisakit]);
 
     }
 

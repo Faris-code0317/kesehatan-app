@@ -180,18 +180,20 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
+                                                    @foreach ($datasiswasakit as $no=>$item)
                                                     <tr>
-                                                        <td>1</td>
-                                                        <td>Abdul Muhith</td>
-                                                        <td>XI A PPLG</td>
-                                                        <td>Ust Nurhadi</td>
-                                                        <td>Demam</td>
-                                                        <td>Belum Berobat</td>
-                                                        <td>10/11/2024</td>
+                                                        <td>{{ $no + 1 }}</td>
+                                                        <td>{{ $item['nama_lengkap'] }}</td>
+                                                        <td>{{ $item['kelas'] }}</td>
+                                                        <td>{{ $item['wali_kelas'] }}</td>
+                                                        <td>{{ $item['keluhan'] }}</td>
+                                                        <td>{{ $item['status_pengobatan'] }}</td>
+                                                        <td>{{ $item['tanggal_sakit'] }}</td>
                                                         <td class="d-flex">
-                                                            <a href="{{ route('rekam.siswa') }}" class="btn btn-primary mr-4">Pilih</a>
+                                                            <a href="{{ route('rekam.siswa', $item['id']) }}" class="btn btn-primary mr-4">Pilih</a>
                                                         </td>
                                                     </tr>
+                                                    @endforeach
                                                 </tbody>
                                             </table>
                                         </div>

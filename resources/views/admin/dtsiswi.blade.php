@@ -178,53 +178,53 @@
                     </ul>
                 </div>
                 <div class="tab-content tab-content-basic">
-                    <div class="tab-pane fade show active mb-5" id="belumberobat" role="tabpanel"
-                        aria-labelledby="belumberobat">
-                        <div class="row">
-                            <div class="col-lg-12 d-flex flex-column">
-                                <div class="row flex-grow">
-                                    <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
-                                        <div class="card card-rounded p-3" style="overflow: auto">
-                                            <div class="card-body">
-                                                <p class="card-title mb-0">Data Pasien Siswi</p>
-                                                <div class="table-responsive">
-                                                    <table class="table table-hover">
-                                                        <thead class="text-center table-primary">
-                                                            <tr>
-                                                                <th>No</th>
-                                                                <th>Nama Lengkap</th>
-                                                                <th>Kelas</th>
-                                                                <th>Wali Kelas</th>
-                                                                <th>Keluhan/Gejala</th>
-                                                                <th>Status Pengobatan</th>
-                                                                <th>Tanggal Sakit</th>
-                                                                <th>Option</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>1</td>
-                                                                <td>Cantika</td>
-                                                                <td>VII A</td>
-                                                                <td>Ustzh Noor</td>
-                                                                <td>Diare</td>
-                                                                <td>Belum Berobat</td>
-                                                                <td>10/11/2024</td>
-                                                                <td class="d-flex">
-                                                                    <a href="{{ route('rekam.siswi') }}"
-                                                                        class="btn btn-primary mr-4">Pilih</a>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
+                <div class="tab-pane fade show active mb-5" id="belumberobat" role="tabpanel" aria-labelledby="belumberobat">
+                    <div class="row">
+                      <div class="col-lg-12 d-flex flex-column">
+                        <div class="row flex-grow">
+                          <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
+                            <div class="card card-rounded p-3" style="overflow: auto">
+                                <div class="card-body">
+                                    <p class="card-title mb-0">Data Pasien Siswi</p>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead class="text-center table-primary">
+                                                <tr>
+                                                    <th>No</th>
+                                                    <th>Nama Lengkap</th>
+                                                    <th>Kelas</th>
+                                                    <th>Wali Kelas</th>
+                                                    <th>Keluhan/Gejala</th>
+                                                    <th>Status Pengobatan</th>
+                                                    <th>Tanggal Sakit</th>
+                                                    <th>Option</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach ($datasiswisakit as $no=>$item)
+                                                <tr>
+                                                    <td>{{ $no + 1 }}</td>
+                                                    <td>{{ $item['nama_lengkap'] }}</td>
+                                                    <td>{{ $item['kelas'] }}</td>
+                                                    <td>{{ $item['wali_kelas'] }}</td>
+                                                    <td>{{ $item['keluhan'] }}</td>
+                                                    <td>{{ $item['status_pengobatan'] }}t</td>
+                                                    <td>{{ $item['tanggal_sakit'] }}</td>
+                                                    <td class="d-flex">
+                                                        <a href="{{ route('rekam.siswi', $item['id']) }}" class="btn btn-primary mr-4">Pilih</a>
+                                                    </td>
+                                                </tr>
+                                                @endforeach
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
+                          </div>
                         </div>
+                      </div>
                     </div>
+                </div>
 
                     <div class="tab-pane fade mb-5" id="sudahberobat" role="tabpanel" aria-labelledby="sudahberobat">
                         <div class="row">

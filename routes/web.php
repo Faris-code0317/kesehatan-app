@@ -47,8 +47,8 @@ Route::get('/admin/kordinator/siswa', [DataController::class, 'datasiswa'])->nam
 Route::get('/admin/kordinator/siswi', [DataController::class, 'datasiswi'])->name('data.siswi');
 Route::get('/admin/kordinator/dashboard', [DataController::class, 'dashboard'])->name('dashboard.kesehatan');
 //nanti tambahkan id
-Route::get('/admin/kordinator/rekamsiswa', [DataController::class, 'rekamsiswa'])->name('rekam.siswa');
-Route::get('/admin/kordinator/rekamsiswi', [DataController::class, 'rekamsiswi'])->name('rekam.siswi');
+Route::get('/admin/kordinator/rekamsiswa/{id}', [DataController::class, 'rekamsiswa'])->name('rekam.siswa');
+Route::get('/admin/kordinator/rekamsiswi/{id}', [DataController::class, 'rekamsiswi'])->name('rekam.siswi');
 //tambahkan route::putnya di bawah sini
 
 
@@ -81,6 +81,11 @@ Route::get('/admin/kordinator/tambahpasien', [DataController::class, 'tambahpasi
 Route::get('landing', [PageController::class, 'landing'])->name('landing');
 Route::get('about', [PageController::class, 'about'])->name('about');
 Route::get('data', [PageController::class, 'data'])->name('data');
+Route::get('rekammedis', [PageController::class, 'rekammedis'])->name('rekammedis');
 Route::get('login', [PageController::class, 'login'])->name('login');
 Route::get('pengembang', [PageController::class, 'dev'])->name('pengembang');
+//data lengkap
+Route::get('datalengkapsiswi/{id}', [PageController::class, 'datalengkapsiswi'])->name('datalengkap.siswi');
+Route::get('datalengkapsiswa/{id}', [PageController::class, 'datalengkapsiswa'])->name('datalengkap.siswa');
+
 

@@ -13,7 +13,7 @@ class pasiensiswacontroller extends Controller
         $response = $client->request('GET', $url);
         $content = $response->getBody()->getContents();
         $contentArray = json_decode($content, true);
-        $datapasiensiswa = $contentArray['data'];
+        $datapasiensiswa = $contentArray['datapasiensiswa'];
         return view('admin.index', ['datapasiensiswa'=> $datapasiensiswa]);
     }
 

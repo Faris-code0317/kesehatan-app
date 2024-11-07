@@ -79,15 +79,17 @@
                                                                 </tr>
                                                             </thead>
                                                             <tbody class="text-center">
-                                                                <tr>
-                                                                    <td>1</td>
-                                                                    <td>Alfan Wira Birrin</td>
-                                                                    <td>XI A PPLG</td>
-                                                                    <td>Ust Nur Hadi Lubis</td>
-                                                                    <td>Diare</td>
-                                                                    <td>Belum Berobat</td>
-                                                                    <td>10/11/2024</td>
-                                                                </tr>
+                                                                @foreach ($datasiswasakit as $no=>$item)
+                                                                    <tr>
+                                                                        <td>{{ $no + 1 }}</td>
+                                                                        <td>{{ $item['nama_lengkap'] }}</td>
+                                                                        <td>{{ $item['kelas'] }}</td>
+                                                                        <td>{{ $item['wali_kelas'] }}</td>
+                                                                        <td>{{ $item['keluhan'] }}</td>
+                                                                        <td>{{ $item['status_pengobatan'] }}</td>
+                                                                        <td>{{ $item['tanggal_sakit'] }}</td>
+                                                                    </tr>
+                                                                @endforeach
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -122,7 +124,7 @@
                                                                 </tr>
                                                             </thead>
                                                             <tbody class="text-center">
-                                                                {{-- @foreach ($datapasiensiswi as $no => $item)
+                                                                @foreach ($datapasiensiswa as $no => $item)
                                                                     <tr>
                                                                         <td>{{ $no + 1 }}</td>
                                                                         <td>{{ $item['nama_lengkap'] }}</td>
@@ -133,13 +135,11 @@
                                                                         <td>{{ $item['tanggal_sakit'] }}</td>
                                                                         <td>{{ $item['tanggal_berobat'] }}</td>
                                                                         <td class="d-flex">
-                                                                            <a href="{{ route('profile.pasiensiswi', $item['id']) }}"
+                                                                            <a href="{{ route('datalengkap.siswa', $item['id']) }}"
                                                                                 class="btn btn-outline-success">Show</a>
-                                                                            <a href="{{ route('edit.pasiensiswi', $item['id']) }}"
-                                                                                class="btn btn-outline-warning">Edit</a>
                                                                         </td>
                                                                     </tr>
-                                                                @endforeach --}}
+                                                                @endforeach
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -193,15 +193,17 @@
                                                                 </tr>
                                                             </thead>
                                                             <tbody class="text-center">
+                                                                @foreach ($datasiswisakit as $no=>$item)
                                                                 <tr>
-                                                                    <td>1</td>
-                                                                    <td>Dera Rizkia</td>
-                                                                    <td>XI A PPLG</td>
-                                                                    <td>Ustzh Nur</td>
-                                                                    <td>Diare</td>
-                                                                    <td>Belum Berobat</td>
-                                                                    <td>10/11/2024</td>
+                                                                    <td>{{ $no + 1 }}</td>
+                                                                    <td>{{ $item['nama_lengkap'] }}</td>
+                                                                    <td>{{ $item['kelas'] }}</td>
+                                                                    <td>{{ $item['wali_kelas'] }}</td>
+                                                                    <td>{{ $item['keluhan'] }}</td>
+                                                                    <td>{{ $item['status_pengobatan'] }}</td>
+                                                                    <td>{{ $item['tanggal_sakit'] }}</td>
                                                                 </tr>
+                                                            @endforeach
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -236,7 +238,7 @@
                                                                 </tr>
                                                             </thead>
                                                             <tbody class="text-center">
-                                                                {{-- @foreach ($datapasiensiswi as $no => $item)
+                                                                @foreach ($datapasiensiswi as $no => $item)
                                                                     <tr>
                                                                         <td>{{ $no + 1 }}</td>
                                                                         <td>{{ $item['nama_lengkap'] }}</td>
@@ -247,13 +249,11 @@
                                                                         <td>{{ $item['tanggal_sakit'] }}</td>
                                                                         <td>{{ $item['tanggal_berobat'] }}</td>
                                                                         <td class="d-flex">
-                                                                            <a href="{{ route('profile.pasiensiswi', $item['id']) }}"
+                                                                            <a href="{{ route('datalengkap.siswi', $item['id']) }}"
                                                                                 class="btn btn-outline-success">Show</a>
-                                                                            <a href="{{ route('edit.pasiensiswi', $item['id']) }}"
-                                                                                class="btn btn-outline-warning">Edit</a>
                                                                         </td>
                                                                     </tr>
-                                                                @endforeach --}}
+                                                                @endforeach
                                                             </tbody>
                                                         </table>
                                                     </div>

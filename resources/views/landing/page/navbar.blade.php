@@ -43,7 +43,7 @@
             <div class="navbar-nav ms-auto p-lg-0">
                 <a href="{{ route('landing') }}"
                     class="nav-item nav-link {{ Route::is('landing') ? 'active' : '' }}">Home</a>
-                <a href="" class="nav-item nav-link {{ Route::is('') ? 'active' : '' }}">Rekam Medis</a>
+                <a href="{{ route('rekammedis') }}" class="nav-item nav-link {{ Route::is('rekammedis') ? 'active' : '' }}">Rekam Medis</a>
                 <a href="{{ route('data') }}"
                     class="nav-item nav-link {{ Route::is('data') ? 'active' : '' }}">Data</a>
                     <div class="nav-item dropdown">
