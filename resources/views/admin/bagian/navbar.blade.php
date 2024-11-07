@@ -1,8 +1,22 @@
-<nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-    <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+<nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row" style="height: 80px">
+    {{-- <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
       <a class="navbar-brand brand-logo mr-5"><img src="{{ asset('image/logopanjang.png') }}" class="mr-2" alt="logo"/></a>
       <a class="navbar-brand brand-logo-mini"><img src="{{ asset('image/logo.png') }}" alt="logo"/></a>
+    </div> --}}
+    <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center site-branding">
+        <div class="img-logo">
+            <!-- Logo Panjang -->
+            <a href="" class="custom-logo-link brand-logo" rel="home" aria-current="page">
+                <img width="280" height="79" src="{{ asset('image/logopanjang.png') }}" class="custom-logo" alt="SMK Al-Ittihad" decoding="async" sizes="(max-width: 280px) 100vw, 280px">
+            </a>
+
+            <!-- Logo Mini untuk Tampilan Responsif -->
+            <a class="navbar-brand brand-logo-mini">
+                <img src="{{ asset('image/logo.png') }}" alt="logo"/>
+            </a>
+        </div>
     </div>
+
     <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
       <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
         <span class="ti-view-list"></span>

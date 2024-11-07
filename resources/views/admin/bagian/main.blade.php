@@ -17,6 +17,29 @@
   <link rel="stylesheet" href="{{ asset('template-admin/css/style.css')}}">
   <!-- endinject -->
   <link rel="shortcut icon" href="{{ asset('image/logo.png') }}" />
+  <style>
+    /* Logo panjang hanya terlihat di tampilan besar */
+.custom-logo {
+    display: block;
+}
+
+/* Logo mini hanya terlihat di tampilan kecil */
+.brand-logo-mini {
+    display: none;
+}
+
+/* Media query untuk tampilan responsif (contoh untuk ukuran layar di bawah 768px) */
+@media (max-width: 991px) {
+    .custom-logo {
+        display: none; /* Sembunyikan logo panjang */
+    }
+
+    .brand-logo-mini {
+        display: block; /* Tampilkan logo mini */
+    }
+}
+
+  </style>
 </head>
 <body>
   <div class="container-scroller">
