@@ -21,6 +21,10 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="{{ route('landing') }}">Home</a>
+                    <a class="btn btn-link" href="">Rekam Medis</a>
+                    <a class="btn btn-link" href="{{ route('siswa') }}">Siswa</a>
+                    <a class="btn btn-link" href="{{ route('about') }}">Tentang</a>
                     <a class="btn btn-link" href="">Rekam Medis</a>
                     <a class="btn btn-link" href="{{ route('siswa')}}">Siswa</a>
                     <a class="btn btn-link" href="{{ route('about')}}">Tentang Kami</a>
@@ -75,6 +79,25 @@
                 </div>
             </div>
         </div>
+        <div class="container py-5">
+            <div class="copyright">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <h5 class="text-white mb-4">Developed Team</h5>
+                        <a class="btn btn-link" href="">Abdul Muhith Faris M</a>
+                        <a class="btn btn-link" href="">Taufik Hidayat</a>
+                        <a class="btn btn-link" href="">Michail Ibnu Qalbi</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 ">
+                        <h5 class="text-white mb-4 text-center">Tefatie Team</h5>
+                        <a class="btn btn-link" href="">Home</a>
+                        <a class="btn btn-link" href="">Rekam Medis</a>
+                        <a class="btn btn-link" href="">Siswa</a>
+                        <a class="btn btn-link" href="">Tentang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="copyright">
                 <div class="row">
@@ -88,6 +111,9 @@
                         Distributed By: <a href="#" target="">Pondok Pesantren Al-Ittihad</a>
                         <br>
                         Created By <a href="">Tefatie</a>
+                        Developed By <a href="">Three Person</a>
+                        <br>Distributed By: <a href="">Pondok Pesantren AL-ITTIHAD</a> <br> Created
+                        By <a href="">Tefatie Team</a>
                     </div>
                 </div>
             </div>
