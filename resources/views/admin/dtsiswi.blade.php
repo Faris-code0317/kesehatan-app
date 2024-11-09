@@ -14,61 +14,55 @@
             <div class="row">
                 <div class="col-md-3 grid-margin stretch-card">
                     <div class="card">
-                        <div class="card-body">
-                            <p class="card-title text-md-center text-xl-left">Jumlah Pasien Siswi</p>
-                            <div
-                                class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
-                                <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">12</h3>
-                                <svg width="100" height="150" viewBox="0 0 24 32" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <!-- Kepala pasien -->
-                                    <circle cx="12" cy="8" r="4" fill="#E0C4A8" />
+                      <div class="card-body">
+                        <p class="card-title text-md-center text-xl-left">Total Pasien Siswi:</p>
+                        <div class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
+                          <h3 id="totalPasiensiswi" class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">0</h3>
+                          <svg width="100" height="150" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <!-- Kepala pasien -->
+                              <circle cx="12" cy="8" r="4" fill="#E0C4A8"/>
 
-                                    <!-- Masker -->
-                                    <rect x="8" y="10" width="8" height="4" fill="#B0B0B0" rx="1"
-                                        ry="1" />
+                              <!-- Masker -->
+                              <rect x="8" y="10" width="8" height="4" fill="#B0B0B0" rx="1" ry="1" />
 
-                                    <!-- Tali masker kiri -->
-                                    <path d="M8 10 Q6.5 9.5, 6 8" fill="none" stroke="#B0B0B0" stroke-width="0.5" />
+                              <!-- Tali masker kiri -->
+                              <path d="M8 10 Q6.5 9.5, 6 8" fill="none" stroke="#B0B0B0" stroke-width="0.5"/>
 
-                                    <!-- Tali masker kanan -->
-                                    <path d="M16 10 Q17.5 9.5, 18 8" fill="none" stroke="#B0B0B0" stroke-width="0.5" />
+                              <!-- Tali masker kanan -->
+                              <path d="M16 10 Q17.5 9.5, 18 8" fill="none" stroke="#B0B0B0" stroke-width="0.5"/>
 
-                                    <!-- Garis detail masker -->
-                                    <line x1="8" y1="12" x2="16" y2="12" stroke="#D0D0D0"
-                                        stroke-width="0.3" />
+                              <!-- Garis detail masker -->
+                              <line x1="8" y1="12" x2="16" y2="12" stroke="#D0D0D0" stroke-width="0.3"/>
 
-                                    <!-- Topi pasien -->
-                                    <rect x="9" y="4" width="6" height="2" fill="#4A90E2" rx="1"
-                                        ry="1" />
+                              <!-- Topi pasien -->
+                              <rect x="9" y="4" width="6" height="2" fill="#4A90E2" rx="1" ry="1" />
 
-                                    <!-- Leher -->
-                                    <rect x="11" y="14" width="2" height="2" fill="#E0C4A8" />
+                              <!-- Leher -->
+                              <rect x="11" y="14" width="2" height="2" fill="#E0C4A8" />
 
-                                    <!-- Kerah baju pasien atas -->
-                                    <path d="M10 16 Q12 20, 14 16 Q12 15, 10 16 Z" fill="#D3D3D3" />
+                              <!-- Kerah baju pasien atas -->
+                              <path d="M10 16 Q12 20, 14 16 Q12 15, 10 16 Z" fill="#D3D3D3" />
 
-                                    <!-- Badan pasien -->
-                                    <rect x="7" y="18" width="10" height="10" fill="#4A90E2" rx="2"
-                                        ry="2" />
+                              <!-- Badan pasien -->
+                              <rect x="7" y="18" width="10" height="10" fill="#4A90E2" rx="2" ry="2" />
 
-                                    <!-- Lengan Kiri -->
-                                    <path d="M7 18 Q5 22, 7 26" fill="none" stroke="#4A90E2" stroke-width="2" />
+                              <!-- Lengan Kiri -->
+                              <path d="M7 18 Q5 22, 7 26" fill="none" stroke="#4A90E2" stroke-width="2"/>
 
-                                    <!-- Lengan Kanan -->
-                                    <path d="M17 18 Q19 22, 17 26" fill="none" stroke="#4A90E2" stroke-width="2" />
+                              <!-- Lengan Kanan -->
+                              <path d="M17 18 Q19 22, 17 26" fill="none" stroke="#4A90E2" stroke-width="2"/>
 
-                                    <!-- Kaki Kiri -->
-                                    <rect x="8" y="28" width="3" height="4" fill="#4A90E2" />
+                              <!-- Kaki Kiri -->
+                              <rect x="8" y="28" width="3" height="4" fill="#4A90E2" />
 
-                                    <!-- Kaki Kanan -->
-                                    <rect x="13" y="28" width="3" height="4" fill="#4A90E2" />
-                                </svg>
-                            </div>
-                            {{-- <p class="mb-0 mt-2 text-danger">0.12% <span class="text-black ml-1"><small>(30 days)</small></span></p> --}}
-                        </div>
+                              <!-- Kaki Kanan -->
+                              <rect x="13" y="28" width="3" height="4" fill="#4A90E2" />
+                            </svg>
+                          </div>
+                        {{-- <p class="mb-0 mt-2 text-danger">0.12% <span class="text-black ml-1"><small>(30 days)</small></span></p> --}}
+                      </div>
                     </div>
-                </div>
+                  </div>
                 <div class="col-md-3 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
@@ -128,32 +122,22 @@
                 </div>
                 <div class="col-md-3 grid-margin stretch-card">
                     <div class="card">
-                        <div class="card-body">
-                            <p class="card-title text-md-center text-xl-left">Downloads</p>
-                            <div
-                                class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
-                                <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">40016</h3>
-                                <i class="ti-agenda icon-md text-muted mb-0 mb-md-3 mb-xl-0"></i>
-                            </div>
-                            <p class="mb-0 mt-2 text-success">64.00%<span class="text-black ml-1"><small>(30
-                                        days)</small></span></p>
+                      <div class="card-body">
+                        <div class="d-flex flex-wrap justify-content-center justify-content-md-center justify-content-xl-center align-items-center">
+                          <img src="{{ asset('image/logo.png') }}" alt="A" width="200px" height="200px">
                         </div>
+                      </div>
                     </div>
-                </div>
-                <div class="col-md-3 grid-margin stretch-card">
+                  </div>
+                  <div class="col-md-3 grid-margin stretch-card">
                     <div class="card">
-                        <div class="card-body">
-                            <p class="card-title text-md-center text-xl-left">Returns</p>
-                            <div
-                                class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
-                                <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">61344</h3>
-                                <i class="ti-layers-alt icon-md text-muted mb-0 mb-md-3 mb-xl-0"></i>
-                            </div>
-                            <p class="mb-0 mt-2 text-success">23.00%<span class="text-black ml-1"><small>(30
-                                        days)</small></span></p>
+                      <div class="card-body">
+                        <div class="d-flex flex-wrap justify-content-center justify-content-md-center justify-content-xl-center align-items-center">
+                          <img src="{{ asset('image/kesehatan.png') }}" alt="A" width="200px" height="200px">
                         </div>
+                      </div>
                     </div>
-                </div>
+                  </div>
             </div>
             <div>
                 <div class="btn-wrapper mb-3">
@@ -187,7 +171,7 @@
                                 <div class="card-body">
                                     <p class="card-title mb-0">Data Pasien Siswi</p>
                                     <div class="table-responsive">
-                                        <table class="table table-hover">
+                                        <table class="table table-hover" id="belumTablesiswi">
                                             <thead class="text-center table-primary">
                                                 <tr>
                                                     <th>No</th>
@@ -235,7 +219,7 @@
                                             <div class="card-body">
                                                 <p class="card-title mb-0">Data Pasien Siswi</p>
                                                 <div class="table-responsive">
-                                                    <table class="table table-hover">
+                                                    <table class="table table-hover" id="sudahTablesiswi">
                                                         <thead class="text-center table-primary">
                                                             <tr>
                                                                 <th>No</th>

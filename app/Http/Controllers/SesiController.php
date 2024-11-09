@@ -10,7 +10,7 @@ class SesiController extends Controller
     function index()
     {
 
-        return view('landing.landing');
+        return view('welcome');
 
     }
     function login(Request $request){

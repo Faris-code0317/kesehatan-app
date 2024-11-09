@@ -15,9 +15,9 @@
         <div class="col-md-3 grid-margin stretch-card">
           <div class="card">
             <div class="card-body">
-              <p class="card-title text-md-center text-xl-left">Jumlah Pasien Siswa</p>
+              <p class="card-title text-md-center text-xl-left">Total Pasien Siswa:</p>
               <div class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
-                <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">12</h3>
+                <h3 id="totalPasien" class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">0</h3>
                 <svg width="100" height="150" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <!-- Kepala pasien -->
                     <circle cx="12" cy="8" r="4" fill="#E0C4A8"/>
@@ -117,24 +117,18 @@
         <div class="col-md-3 grid-margin stretch-card">
           <div class="card">
             <div class="card-body">
-              <p class="card-title text-md-center text-xl-left">Downloads</p>
-              <div class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
-                <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">40016</h3>
-                <i class="ti-agenda icon-md text-muted mb-0 mb-md-3 mb-xl-0"></i>
+              <div class="d-flex flex-wrap justify-content-center justify-content-md-center justify-content-xl-center align-items-center">
+                <img src="{{ asset('image/logo.png') }}" alt="A" width="200px" height="200px">
               </div>
-              <p class="mb-0 mt-2 text-success">64.00%<span class="text-black ml-1"><small>(30 days)</small></span></p>
             </div>
           </div>
         </div>
         <div class="col-md-3 grid-margin stretch-card">
           <div class="card">
             <div class="card-body">
-              <p class="card-title text-md-center text-xl-left">Returns</p>
-              <div class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
-                <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">61344</h3>
-                <i class="ti-layers-alt icon-md text-muted mb-0 mb-md-3 mb-xl-0"></i>
+              <div class="d-flex flex-wrap justify-content-center justify-content-md-center justify-content-xl-center align-items-center">
+                <img src="{{ asset('image/kesehatan.png') }}" alt="A" width="200px" height="200px">
               </div>
-              <p class="mb-0 mt-2 text-success">23.00%<span class="text-black ml-1"><small>(30 days)</small></span></p>
             </div>
           </div>
         </div>
@@ -166,7 +160,7 @@
                                     <div class="card-body">
                                         <p class="card-title mb-0">Data Pasien Siswa</p>
                                         <div class="table-responsive">
-                                            <table class="table table-hover">
+                                            <table class="table table-hover" id="belumBerobatTable">
                                                 <thead class="text-center table-primary">
                                                     <tr>
                                                         <th>No</th>
@@ -214,7 +208,7 @@
                                     <div class="card-body">
                                         <p class="card-title mb-0">Data Pasien Siswa</p>
                                         <div class="table-responsive">
-                                            <table class="table table-hover">
+                                            <table class="table table-hover" id="sudahBerobatTable">
                                                 <thead class="text-center table-primary">
                                                     <tr>
                                                         <th>No</th>

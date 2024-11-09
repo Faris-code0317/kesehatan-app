@@ -62,6 +62,26 @@
     </div>
 </footer>
 <script>
+    const belumBerobatTable = document.getElementById("belumBerobatTable");
+    const belumBerobatCount = belumBerobatTable.querySelectorAll("tbody tr").length;
+    // Menghitung jumlah pasien sudah berobat
+    const sudahBerobatTable = document.getElementById("sudahBerobatTable");
+    const sudahBerobatCount = sudahBerobatTable.querySelectorAll("tbody tr").length;
+    // Menampilkan total jumlah pasien
+    const totalPasien = belumBerobatCount + sudahBerobatCount;
+    document.getElementById("totalPasien").textContent = totalPasien;
+
+    //siswi
+    const belumBerobatTablesiswi = document.getElementById("belumTablesiswi");
+    const belumBerobatCountsiswi = belumBerobatTablesiswi.querySelectorAll("tbody tr").length;
+    // Menghitung jumlah pasien sudah berobat
+    const sudahBerobatTablesiswi = document.getElementById("sudahTablesiswi");
+    const sudahBerobatCountsiswi = sudahBerobatTablesiswi.querySelectorAll("tbody tr").length;
+    // Menampilkan total jumlah pasien
+    const totalPasiensiswi = belumBerobatCountsiswi + sudahBerobatCountsiswi;
+    document.getElementById("totalPasiensiswi").textContent = totalPasiensiswi;
+
+
     function searchSiswa() {
                 const input = document.getElementById('searchInput');
                 const filter = input.value.toLowerCase();
