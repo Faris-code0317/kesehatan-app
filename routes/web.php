@@ -13,6 +13,10 @@ use App\Http\Controllers\PageController;
 
 //--//
 
+// Buat UKS
+
+use App\Http\Controllers\uksController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -36,11 +40,11 @@ Route::get('/home', function () {
 
 
 
-Route::middleware(['auth'])->group(function(){
-    Route::get('/admin',[AdminController::class,'index']);
-    Route::get('/admin/operator',[AdminController::class,'operator'])->middleware(('userAkses:operator'));
-Route::get('/admin/kordinator/dashboard',[DataController::class,'dashboard'])->middleware(('userAkses:kordinator'))->name('dashboard.kesehatan');
-    Route::get('/logout',[SesiController::class,'logout']);
+Route::middleware(['auth'])->group(function () {
+    Route::get('/admin', [AdminController::class, 'index']);
+    Route::get('/admin/operator', [AdminController::class, 'operator'])->middleware(('userAkses:operator'));
+    Route::get('/admin/kordinator/dashboard', [DataController::class, 'dashboard'])->middleware(('userAkses:kordinator'))->name('dashboard.kesehatan');
+    Route::get('/logout', [SesiController::class, 'logout']);
 });
 
 Route::get('/admin/kordinator/siswa', [DataController::class, 'datasiswa'])->name('data.pasien');
@@ -53,24 +57,24 @@ Route::get('/admin/kordinator/rekamsiswi/{id}', [DataController::class, 'rekamsi
 
 
 //menuju form data lengkap pasien
-Route::get('/admin/kordinator/profilepasien/{id}',[pasiensiswacontroller::class,'profilepasien'])->name('profile.pasien');
-Route::get('/admin/kordinator/profilepasiensiswi/{id}',[pasiensiswicontroller::class,'profilepasien'])->name('profile.pasiensiswi');
+Route::get('/admin/kordinator/profilepasien/{id}', [pasiensiswacontroller::class, 'profilepasien'])->name('profile.pasien');
+Route::get('/admin/kordinator/profilepasiensiswi/{id}', [pasiensiswicontroller::class, 'profilepasien'])->name('profile.pasiensiswi');
 
 //menuju from edit pasien
 //siswi
-Route::get('/admin/kordinator/editpasien/{id}',[pasiensiswacontroller::class,'edit'])->name('edit.pasien');
-Route::put('/admin/kordinator/updatepasien/{id}',[pasiensiswacontroller::class,'update'])->name('update.pasien');
+Route::get('/admin/kordinator/editpasien/{id}', [pasiensiswacontroller::class, 'edit'])->name('edit.pasien');
+Route::put('/admin/kordinator/updatepasien/{id}', [pasiensiswacontroller::class, 'update'])->name('update.pasien');
 //siswi
-Route::get('/admin/kordinator/editpasiensiswi/{id}',[pasiensiswicontroller::class,'edit'])->name('edit.pasiensiswi');
-Route::put('/admin/kordinator/updatepasiensiswi/{id}',[pasiensiswicontroller::class,'update'])->name('update.pasiensiswi');
+Route::get('/admin/kordinator/editpasiensiswi/{id}', [pasiensiswicontroller::class, 'edit'])->name('edit.pasiensiswi');
+Route::put('/admin/kordinator/updatepasiensiswi/{id}', [pasiensiswicontroller::class, 'update'])->name('update.pasiensiswi');
 
 //route menuju form tambah
-Route::get('/admin/kordinator/tambahpasien',[DataController::class,'tambahpasien'])->name('tambah.pasien');
-Route::post('/admin/kordinator/siswa',[pasiensiswacontroller::class, 'store'])->name('tambahpasien.siswa');
-Route::post('/admin/kordinator/siswi',[pasiensiswicontroller::class, 'store'])->name('tambahpasien.siswi');
+Route::get('/admin/kordinator/tambahpasien', [DataController::class, 'tambahpasien'])->name('tambah.pasien');
+Route::post('/admin/kordinator/siswa', [pasiensiswacontroller::class, 'store'])->name('tambahpasien.siswa');
+Route::post('/admin/kordinator/siswi', [pasiensiswicontroller::class, 'store'])->name('tambahpasien.siswi');
 
 //menuju form rekam medis
-Route::get('/admin/kordinator/datarekammedis',[DataController::class,'datarekammedis'])->name('data.rekammedis');
+Route::get('/admin/kordinator/datarekammedis', [DataController::class, 'datarekammedis'])->name('data.rekammedis');
 Route::get('/admin/kordinator/tambahpasien', [DataController::class, 'tambahpasien'])->name('tambah.pasien');
 
 
@@ -89,3 +93,7 @@ Route::get('datalengkapsiswi/{id}', [PageController::class, 'datalengkapsiswi'])
 Route::get('datalengkapsiswa/{id}', [PageController::class, 'datalengkapsiswa'])->name('datalengkap.siswa');
 
 
+//UKS
+
+Route::get('uks', [uksController::class, 'index'])->name('uks');
+Route::get('pasienuks', [uksController::class, 'tambahpasien'])->name('tambahpasienuks');

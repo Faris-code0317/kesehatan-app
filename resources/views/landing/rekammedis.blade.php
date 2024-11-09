@@ -16,14 +16,14 @@
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">Siswa</li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Rekam Medis</li>
                 </ol>
             </nav>
         </div>
     </div>
     <!-- Page Header End -->
 
-    <div class="main-panel">
+    <div class="main-panel container">
         <div class="content-wrapper">
                 <div>
                     <div class="btn-wrapper mb-3">
@@ -65,7 +65,7 @@
                                                                 <th>Option</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody class="">
+                                                        <tbody class="text-center">
                                                             @foreach($datapasiensiswa as $no=>$item)
                                                             <tr style="font-size: 14px">
                                                                 <td>{{ $no+1 }}</td>
@@ -113,7 +113,7 @@
                                                                     <th>Option</th>
                                                                 </tr>
                                                             </thead>
-                                                            <tbody class="">
+                                                            <tbody class="text-center">
                                                                 @foreach($datapasiensiswi as $no=>$item)
                                                             <tr style="font-size:14px">
                                                                 <td>{{ $no+1 }}</td>

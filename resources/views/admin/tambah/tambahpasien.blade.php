@@ -15,7 +15,7 @@
         <div class="tab-pane fade show active mb-5" id="tambahdatapasiensiswa" role="tabpanel" aria-labelledby="tambahdatapasiensiswa">
             <div class="col-lg-11 col-md-11 grid-margin stretch-card mt-4 ms-4">
                 <div class="card border-bottom-0">
-                    <div class="card-body pb-0">
+                    <div class="card-body">
                         <p class="card-title">Tambahkan Data Pasien Siswa</p>
                         @if(session('error'))
                         <div class="alert alert-danger">

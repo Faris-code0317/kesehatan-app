@@ -14,7 +14,7 @@ class AdminController extends Controller
     }
     function operator()
     {
-        return view('admin');
+        return view('uks.uks');
 
     } function kordinator()
     {

@@ -16,7 +16,7 @@
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">Siswa</li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Data</li>
                 </ol>
             </nav>
         </div>
@@ -24,7 +24,7 @@
     <!-- Page Header End -->
 
 
-    <div class="home-tab container">
+    <div class="home-tab container-fluid">
         <div class="d-sm-flex align-items-center justify-content-between border-bottom">
             <ul class="nav nav-tabs" role="tablist">
                 <li class="nav-item">
@@ -121,9 +121,10 @@
                                                                     <th>Status Pengobatan</th>
                                                                     <th>Tanggal Sakit</th>
                                                                     <th>Tanggal Berobat</th>
+                                                                    <th>option</th>
                                                                 </tr>
                                                             </thead>
-                                                            <tbody class="text-center">
+                                                            <tbody class="text-left">
                                                                 @foreach ($datapasiensiswa as $no => $item)
                                                                     <tr>
                                                                         <td>{{ $no + 1 }}</td>
@@ -134,7 +135,7 @@
                                                                         <td>{{ $item['status_pengobatan'] }}</td>
                                                                         <td>{{ $item['tanggal_sakit'] }}</td>
                                                                         <td>{{ $item['tanggal_berobat'] }}</td>
-                                                                        <td class="d-flex">
+                                                                        <td>
                                                                             <a href="{{ route('datalengkap.siswa', $item['id']) }}"
                                                                                 class="btn btn-outline-success">Show</a>
                                                                         </td>
@@ -235,9 +236,10 @@
                                                                     <th>Status Pengobatan</th>
                                                                     <th>Tanggal Sakit</th>
                                                                     <th>Tanggal Berobat</th>
+                                                                    <th>Option</th>
                                                                 </tr>
                                                             </thead>
-                                                            <tbody class="text-center">
+                                                            <tbody class="text-left ">
                                                                 @foreach ($datapasiensiswi as $no => $item)
                                                                     <tr>
                                                                         <td>{{ $no + 1 }}</td>
@@ -248,9 +250,8 @@
                                                                         <td>{{ $item['status_pengobatan'] }}</td>
                                                                         <td>{{ $item['tanggal_sakit'] }}</td>
                                                                         <td>{{ $item['tanggal_berobat'] }}</td>
-                                                                        <td class="d-flex">
-                                                                            <a href="{{ route('datalengkap.siswi', $item['id']) }}"
-                                                                                class="btn btn-outline-success">Show</a>
+                                                                        <td>
+                                                                            <a href="{{ route('datalengkap.siswi', $item['id']) }}"class="btn btn-outline-success">Show</a>
                                                                         </td>
                                                                     </tr>
                                                                 @endforeach
